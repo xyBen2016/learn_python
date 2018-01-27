@@ -1,0 +1,1000 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />       
+        <meta name="language" content="en" />        
+        <link rel="stylesheet" type="text/css" href="/bugfree3.0.4/themes/classic/assets/css/form.css" />
+        <link rel="stylesheet" type="text/css" href="/bugfree3.0.4/themes/classic/assets/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="/bugfree3.0.4/themes/classic/assets/css/bugfree3_basic.css" />
+                                        <script type="text/javascript" src="/bugfree3.0.4/themes/classic/assets/js/overlib.js"></script>
+        <script type="text/javascript" src="/bugfree3.0.4/themes/classic/assets/js/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="/bugfree3.0.4/assets/9d10092d/zTreeStyle.css" />
+<link rel="stylesheet" type="text/css" href="/bugfree3.0.4/assets/ac5d95b7/thickbox.css" />
+<link rel="stylesheet" type="text/css" href="/bugfree3.0.4/assets/ac5d95b7/jquery.autocomplete.css" />
+<link rel="stylesheet" type="text/css" href="/bugfree3.0.4/assets/35fa7975/jui/css/base/jquery-ui.css" />
+<script type="text/javascript" src="/bugfree3.0.4/assets/35fa7975/jquery.min.js"></script>
+<script type="text/javascript" src="/bugfree3.0.4/assets/35fa7975/jquery.bgiframe.js"></script>
+<script type="text/javascript" src="/bugfree3.0.4/assets/9d10092d/jquery.ztree.js"></script>
+<script type="text/javascript" src="/bugfree3.0.4/assets/ac5d95b7/jquery.ajaxQueue.js"></script>
+<script type="text/javascript" src="/bugfree3.0.4/assets/ac5d95b7/jquery.cookie.js"></script>
+<script type="text/javascript" src="/bugfree3.0.4/assets/ac5d95b7/json2.js"></script>
+<script type="text/javascript" src="/bugfree3.0.4/assets/ac5d95b7/jquery.autocomplete.js"></script>
+<script type="text/javascript" src="/bugfree3.0.4/themes/classic/assets/js/jquery.tools.min.js"></script>
+<script type="text/javascript" src="/bugfree3.0.4/themes/classic/assets/js/jquery.form.js"></script>
+<title>BugFree</title>
+    </head>
+    <body>
+        <link rel="stylesheet" type="text/css" href="/bugfree3.0.4/themes/classic/assets/css/blue.css" />
+<link rel="shortcut icon" href="/bugfree3.0.4/favicon_blue.ico" type="image/x-icon" />
+<div style="height: 100%;">
+    <div id="top">
+        <div id="logo">
+            <a href="/bugfree3.0.4/index.php/bug/list/1">
+                <img src="/bugfree3.0.4/themes/classic/assets/images/blue/logo.png"
+                     alt="BugFree" title="BugFree"/>
+            </a>
+        </div>
+        <div id="top-nav">
+            <ul class="menu">
+                <li id="bug">
+                    <a class="selectedtab" href="/bugfree3.0.4/index.php/bug/list/1" >Bug</a>
+                </li>
+                <li id="case"><a class="" href="/bugfree3.0.4/index.php/case/list/1">Case</a></li><li id="result"><a class="" href="/bugfree3.0.4/index.php/result/list/1">Result</a></li>                <li id="createli">
+                </li>
+            </ul>
+        </div>
+        <div class="user-info">
+            欢迎,&nbsp;&nbsp;系统管理员&nbsp;|&nbsp;<a target='_blank' href='/bugfree3.0.4/index.php/testUser/edit/1'>编辑我的信息</a>&nbsp;|&nbsp;<a target='_blank' href='/bugfree3.0.4/index.php/product/index'>后台管理</a>&nbsp;|&nbsp;<a href='/bugfree3.0.4/index.php/site/logout'>退出</a>&nbsp;|&nbsp;<a href='http://testing.etao.com/handbook/bugfree' target='_blank'>帮助</a></div>
+        </div>
+        <div id="indexmain" class="maincontainer">
+        <script type="text/javascript">
+    var $infoType = 'bug';
+    var $baseUrl = '/bugfree3.0.4'
+    var $showType = 'grid';
+    var $productId = 1;
+    var $imgFolder = '/bugfree3.0.4/themes/classic/assets/images/';
+    var $productModuleId = 0;
+    var $totalNum = 1;
+    var $totalNumErrorStr = '数量不能超过 5000 个，操作失败！';
+    var $emptyTemplateTip = '当前没有模板可使用，请在编辑页面保存模板。';
+    var $showMyQueryDiv = '1';
+    function reloadPage(event, treeId, treeNode)
+    {
+        window.location = '/bugfree3.0.4/index.php/bug/list/1?productmodule_id='+
+            treeNode.id;
+    }
+    function disableHiddenPager()
+    {
+        $('div.pager li.hidden a').removeAttr('href');
+    }
+    $(function(){
+        initShowGotoBCR();
+        setSearchHeight();
+        initTreeHeight();
+        disableHiddenPager();
+
+        if('result' != $infoType)
+        {
+            $('#create_div').css({left:$('#createli').offset().left+4+'px'});
+            $('#create_div').show();
+            var inNewDiv = false;
+            $('#create_div_more').bind('mouseenter',function(){
+                showCreate();
+            })
+            $('#create_div_more').bind('mouseleave',function(){
+                setTimeout(function(){
+                    if(!inNewDiv)
+                    {
+                        $('#create_template_div').hide();
+                        $('#create_div_more').removeClass('show_template');
+                    }
+                },100);
+            })
+            $('#create_template_div').bind('mouseleave',function(){
+                inNewDiv = false;
+                $('#create_div_more').removeClass('show_template');
+                $(this).hide();
+            })
+            $('#create_template_div').bind('mouseenter',function(){
+                inNewDiv = true;
+            })
+        }
+    })
+
+    function showCreate() {
+        $('#create_div_more').addClass('show_template');
+        var inputOffset = $('#create_div_more').offset();
+        $("#create_template_div").bgiframe();
+        $("#create_template_div").css({
+            left:inputOffset.left + "px",
+            top:(inputOffset.top + $("#create_div_more").outerHeight()-1) + "px"
+        }).show();
+    }
+
+    function deleteTemplateOrQuery($operationType,$id)
+    {
+        if(!confirm('确认删除?'))
+        {
+            return;
+        }
+        else
+        {
+            jQuery.get("/bugfree3.0.4/index.php/search/deleteTemplateOrQuery", {'id':$id,'type':$operationType}, function (data, textStatus){
+                if('success' == textStatus)
+                {
+                    $('#user_'+$operationType+'_'+$id).remove();
+                    if('query' == $operationType)
+                    {
+                        window.location.href = window.location.href;
+                    }
+                    else
+                    {
+                        $templateLi = $('#create_template_div ul li');
+                        if(0 == $templateLi.length)
+                        {
+                            $('#create_template_div').empty().append($emptyTemplateTip);
+                        }
+                    }                   
+                }
+            });
+        }
+        return false;
+    }
+
+    function exportXml()
+    {
+        if($totalNum>5000)
+        {
+            alert($totalNumErrorStr);
+        }
+        else
+        {
+            var $oldAction = document.SearchBug.action;
+            document.SearchBug.action = '/bugfree3.0.4/index.php/info/export?type=bug&product_id=1';
+            document.SearchBug.submit();
+            document.SearchBug.action = $oldAction;
+        }
+    }
+    function mark($infoId,$isAdd)
+    {
+        jQuery.get("/bugfree3.0.4/index.php/search/mark", {'id':$infoId,'type':$infoType,'isAdd':$isAdd}, function (data, textStatus){
+            if('success' == textStatus)
+            {
+                $isAdd = 1-$isAdd;
+                $('#marklink'+$infoId+' img').attr('src','/bugfree3.0.4/themes/classic/assets/images/'+'flag_'+$isAdd+'.gif');
+                $('#marklink'+$infoId).attr('href','javascript:mark('+$infoId+','+$isAdd+');void(0);');
+            }
+        });
+    }
+    $(window).resize(function() {
+        setSearchHeight();
+        resetTreeHeight();
+    });
+
+    function expandLeft()
+    {
+        var $leftDiv = $('#leftindex');
+        var $rightDiv = $('#rightindex');
+        var $img = $('#expandindex img');
+        var $expand = 0;
+        if('none' == $leftDiv.css('display'))
+        {
+            $expand = 1;
+            $leftDiv.removeClass('not_expand');
+            $rightDiv.removeClass('not_expand');
+            $img.attr('src', '/bugfree3.0.4/themes/classic/assets/images/late_left.gif');
+        }
+        else
+        {
+            $leftDiv.addClass('not_expand');
+            $rightDiv.addClass('not_expand');
+            $img.attr('src', '/bugfree3.0.4/themes/classic/assets/images/late_right.gif');
+        }
+        jQuery.get("/bugfree3.0.4/index.php/search/setExpand", {'expand':$expand}, function (data, textStatus){
+            if('success' == textStatus)
+            {
+            }
+        });
+    }
+
+    function setOutputType()
+    {
+        var showType = 'report';
+        if($showType == 'report')
+        {
+            showType = 'grid';
+        }
+        $.get("/bugfree3.0.4/index.php/page/setOutPutType",
+        {'product_id':$productId,'info_type':$infoType,'show_type':showType},
+        function(){window.location.href=window.location.href;window.location.reload;})
+    }
+
+    function setSearchHeight()
+    {
+        $height = $(window).height();
+        $topheight = $('#SearchBlankCover').height();
+        $('#indexmain').css('height',$height-63+'px');
+        $('#SearchResultDiv').css('height',$height-$topheight-94+'px');
+        $('#expandindex').show();
+    }
+
+    function initTreeHeight()
+    {
+        $height = $(window).height();
+        $queryDiv = $('div.querydiv');
+        if($showMyQueryDiv == '1')
+        {
+            $queryDiv.show();
+            $('#product_module_tree').css('height',$height-320+'px');
+            $('#query_div_switch').attr("src", $imgFolder+'arrow_down.gif');
+        }
+        else
+        {
+            $queryDiv.hide();
+            $('#product_module_tree').css('height',$height-120+'px');
+            $('#query_div_switch').attr("src", $imgFolder+'arrow_up.gif');
+        }
+    }
+
+    function resetTreeHeight()
+    {
+        $height = $(window).height();
+        $queryDiv = $('div.querydiv');      
+        if($queryDiv.is(':visible'))
+        {
+            $('#product_module_tree').css('height',$height-320+'px');
+        }
+        else
+        {
+            $('#product_module_tree').css('height',$height-120+'px');
+        }
+    }
+
+    function setQueryHeight()
+    {
+        $queryDiv = $('div.querydiv');
+        var $expand = 0;
+        if($queryDiv.is(':visible'))
+        {
+            $('#product_module_tree').css('height',$height-120+'px');
+            $('#query_div_switch').attr("src", $imgFolder+'arrow_up.gif');
+            $queryDiv.hide();
+        }
+        else
+        {
+            $expand = 1;
+            $('#product_module_tree').css('height',$height-320+'px');
+            $('#query_div_switch').attr("src", $imgFolder+'arrow_down.gif');
+            $queryDiv.show();
+        }
+        jQuery.get("/bugfree3.0.4/index.php/search/setMyQueryDiv", {'expand':$expand}, function (data, textStatus){});
+    }
+
+    function zTreeOnAsyncSuccess(event, treeId, msg)
+    {
+        var node = product_module_treeTree.getNodeByParam("id",$productModuleId);
+        var selectedNode = product_module_treeTree.getSelectedNode();
+        if(node != selectedNode)
+        {
+            product_module_treeTree.selectNode(node);
+        }
+    }
+    function caseBatchRun()
+    {
+        if(0 == $totalNum)
+        {
+            alert('请至少选择一个 Case');
+        }
+        else if(100<$totalNum)
+        {
+            alert('批量运行不能超过 100 个 Case，请缩小查询条件的范围。');
+        }
+        else
+        {
+            openWindow('/bugfree3.0.4/index.php/info/edit?type=result&action=batch_opened&batch_product_id=1','_blank');
+        }
+    }
+</script>
+<div id="create_div" >
+    <img style="float:left;" src="/bugfree3.0.4/themes/classic/assets/images/add.gif">
+    <a href="/bugfree3.0.4/index.php/info/edit?type=bug&action=opened&product_id=1" target="_blank">&nbsp;新建&nbsp;Bug&nbsp;&nbsp;&nbsp;</a>
+    <img id="create_div_more" src="/bugfree3.0.4/themes/classic/assets/images/create_down.gif">
+</div>
+<div id="create_template_div" class="createtemplate" style="display:none;" onmouseover="inNewDiv = true;">
+    当前没有模板可使用，请在编辑页面保存模板。</div>
+<div id="leftindex" class="">
+    <div class="leftmenu"><select onchange="window.location=&#039;/bugfree3.0.4/index.php/info/index?type=bug&amp;product_id=&#039;+$(this).val()" style="font-size:16px;" name="product_name" id="product_name">
+<option value="1" selected="selected">Sample Product</option>
+<option value="2">myproduct1</option>
+</select></div>    <div id="product_module_tree" class="leftmenu" style="overflow-y:scroll;overflow-x: auto;padding-top: 0px;margin-top: 0px;"></div>
+    
+        <div id="querymenu" class="leftmenu" style="height:auto;position: absolute;bottom:16px;left: 20px;width: 230px;">
+        <div class="title">
+            <a href="#" onclick="setQueryHeight();return false;" style="float:right;margin-top: 0px;_margin-top: -8px;padding: 4px;">
+                <img style="width:16px;" id="query_div_switch" src="/bugfree3.0.4/themes/classic/assets/images/arrow_down.gif" >
+            </a>
+            我的查询          
+        </div>
+        <div class="querydiv" style="">
+            <ul>
+                <li><a class="basic" href="/bugfree3.0.4/index.php/bug/list/1?query_id=-3" title="我的标记">我的标记</a></li><li><a class="basic" href="/bugfree3.0.4/index.php/bug/list/1?query_id=-2" title="指派给我">指派给我</a></li><li><a class="basic" href="/bugfree3.0.4/index.php/bug/list/1?query_id=-4" title="抄送给我">抄送给我</a></li><li><a class="basic" href="/bugfree3.0.4/index.php/bug/list/1?query_id=-1" title="由我创建"><span style="font-weight:bold;">由我创建(1)</span></a></li>            </ul>
+        </div>
+    </div>
+</div>
+<div id="expandindex" onclick="expandLeft();" style="display:none;">
+    <table cellpadding="0" cellspacing="0" border="0" style="height:100%;">
+        <tr>
+            <td style="vertical-align: middle;margin: 0px 0px 0px 0px;padding: 0px 0px 0px 0px;width: 10px;">
+                <img src="/bugfree3.0.4/themes/classic/assets/images/late_left.gif" alt=""/>            </td>
+        </tr>
+    </table>
+</div>
+<div id="rightindex" class="">
+    <script type="text/javascript">
+
+var limitedFieldCount = 8;               //the max search row num
+var templateFieldNumber = '999999';        //template number
+var searchConditionTmp = '<tr class=\"SearchConditionRow\" id=\"SearchConditionRow999999\"><td><select id=\"BugFreeQuery_leftParenthesesName999999\" onchange=\"validateParentheses()\" style=\"width:40px;\" name=\"BugFreeQuery[leftParenthesesName999999]\"><option value=\"\" selected=\"selected\"></option><option value=\"(\">(</option></select></td><td><select id=\"BugFreeQuery_field999999\" onchange=\"updateQueryRow(999999);\" name=\"BugFreeQuery[field999999]\"><option value=\"id\" selected=\"selected\">ID</option><option value=\"title\">Bug标题</option><option value=\"module_name\">模块路径</option><option value=\"bug_status\">状态</option><option value=\"assign_to_name\">指派给</option><option value=\"mail_to\">抄送给</option><option value=\"severity\">严重程度</option><option value=\"priority\">优先级</option><option value=\"updated_by_name\">修改者</option><option value=\"updated_at\">修改日期</option><option value=\"created_by_name\">创建者</option><option value=\"created_at\">创建日期</option><option value=\"resolved_by_name\">解决者</option><option value=\"resolved_at\">解决日期</option><option value=\"duplicate_id\">重复 Bug</option><option value=\"closed_by_name\">关闭者</option><option value=\"closed_at\">关闭日期</option><option value=\"related_bug\">相关 Bug</option><option value=\"related_case\">相关 Case</option><option value=\"related_result\">相关 Result</option><option value=\"modified_by\">相关编辑者</option><option value=\"reopen_count\">激活次数</option><option value=\"solution\">解决方案</option><option value=\"OpenedBuild\">创建 Build</option><option value=\"BugSubStatus\">处理状态</option><option value=\"BugMachine\">机器配置</option><option value=\"BugKeyword\">关键词</option><option value=\"ResolvedBuild\">解决 Build</option><option value=\"BugType\">类型</option><option value=\"HowFound\">如何发现</option><option value=\"BugOS\">操作系统</option><option value=\"BugBrowser\">浏览器</option><option value=\"mark\">标记</option></select></td><td><select id=\"BugFreeQuery_operator999999\" style=\"width:100%\" onchange=\"updateQueryValue(999999,true);\" name=\"BugFreeQuery[operator999999]\"><option value=\"=\" selected=\"selected\">等于</option><option value=\"!=\">不等于</option><option value=\"&gt;\">大于</option><option value=\"&lt;\">小于</option><option value=\"&gt;=\">大于等于</option><option value=\"&lt;=\">小于等于</option><option value=\"IN\">包含</option></select></td><td><input size=\"16\" id=\"BugFreeQuery_value999999\" type=\"text\" value=\"\" name=\"BugFreeQuery[value999999]\" /></td><td><select id=\"BugFreeQuery_rightParenthesesName999999\" onchange=\"validateParentheses()\" style=\"width:40px;\" name=\"BugFreeQuery[rightParenthesesName999999]\"><option value=\"\" selected=\"selected\"></option><option value=\")\">)</option></select></td><td><select id=\"BugFreeQuery_andor999999\" style=\"width:60px;\" name=\"BugFreeQuery[andor999999]\"><option value=\"And\">并且</option><option value=\"Or\">或者</option></select></td><td><a class=\"add_search_button\"  href=\"javascript:addSearchField(999999);\"><img src=\"/bugfree3.0.4/themes/classic/assets/images/add_search.gif\"/></a>&nbsp;&nbsp;<a class=\"cancel_search_button\"  href=\"javascript:removeSearchField(999999);\"><img src=\"/bugfree3.0.4/themes/classic/assets/images/cancel_search.gif\"/></a></td></tr>';
+var searchParamsPreFix = 'BugFreeQuery';
+var infoType = 'bug';
+var dateFormatError = '请输入正确的日期格式。例如，2009-10-8 或 -7。';
+var field_id_type='number';
+var field_title_type='string';
+var field_module_name_type='path';
+var field_bug_status_type='option';
+var field_assign_to_name_type='people';
+var field_mail_to_type='string';
+var field_severity_type='number';
+var field_priority_type='number';
+var field_updated_by_name_type='people';
+var field_updated_at_type='date';
+var field_created_by_name_type='people';
+var field_created_at_type='date';
+var field_resolved_by_name_type='people';
+var field_resolved_at_type='date';
+var field_duplicate_id_type='string';
+var field_closed_by_name_type='people';
+var field_closed_at_type='date';
+var field_related_bug_type='string';
+var field_related_case_type='string';
+var field_related_result_type='string';
+var field_modified_by_type='multipeople';
+var field_reopen_count_type='number';
+var field_solution_type='option';
+var field_OpenedBuild_type='string';
+var field_BugSubStatus_type='option';
+var field_BugMachine_type='string';
+var field_BugKeyword_type='string';
+var field_ResolvedBuild_type='string';
+var field_BugType_type='option';
+var field_HowFound_type='option';
+var field_BugOS_type='option';
+var field_BugBrowser_type='option';
+var field_mark_type='option';
+var field_id_value = '<input type=\"text\"  size=\"16\" value=\"\" id=\"BugFreeQuery_value999999\" name=\"BugFreeQuery[value999999]\">';
+var field_title_value = '<input type=\"text\"  size=\"16\" value=\"\" id=\"BugFreeQuery_value999999\" name=\"BugFreeQuery[value999999]\">';
+var field_module_name_value = '<input type=\"text\"  size=\"16\" value=\"\" id=\"BugFreeQuery_value999999\" name=\"BugFreeQuery[value999999]\">';
+var field_bug_status_value = '<select id=\"BugFreeQuery_value999999\" style=\"width:100%\" name=\"BugFreeQuery[value999999]\"><option value=\"\" selected=\"selected\"></option><option value=\"Active\">Active</option><option value=\"Resolved\">Resolved</option><option value=\"Closed\">Closed</option></select>';
+var field_assign_to_name_value = '<input type=\"text\"  size=\"16\" value=\"\" id=\"BugFreeQuery_value999999\" name=\"BugFreeQuery[value999999]\">';
+var field_mail_to_value = '<input type=\"text\"  size=\"16\" value=\"\" id=\"BugFreeQuery_value999999\" name=\"BugFreeQuery[value999999]\">';
+var field_severity_value = '<select id=\"BugFreeQuery_value999999\" style=\"width:100%\" name=\"BugFreeQuery[value999999]\"><option value=\"\" selected=\"selected\"></option><option value=\"1\">1</option><option value=\"2\">2</option><option value=\"3\">3</option><option value=\"4\">4</option></select>';
+var field_priority_value = '<select id=\"BugFreeQuery_value999999\" style=\"width:100%\" name=\"BugFreeQuery[value999999]\"><option value=\"\" selected=\"selected\"></option><option value=\"1\">1</option><option value=\"2\">2</option><option value=\"3\">3</option><option value=\"4\">4</option></select>';
+var field_updated_by_name_value = '<input type=\"text\"  size=\"16\" value=\"\" id=\"BugFreeQuery_value999999\" name=\"BugFreeQuery[value999999]\">';
+var field_updated_at_value = '<input type=\"text\"  size=\"16\" value=\"\" id=\"BugFreeQuery_value999999\" name=\"BugFreeQuery[value999999]\">';
+var field_created_by_name_value = '<input type=\"text\"  size=\"16\" value=\"\" id=\"BugFreeQuery_value999999\" name=\"BugFreeQuery[value999999]\">';
+var field_created_at_value = '<input type=\"text\"  size=\"16\" value=\"\" id=\"BugFreeQuery_value999999\" name=\"BugFreeQuery[value999999]\">';
+var field_resolved_by_name_value = '<input type=\"text\"  size=\"16\" value=\"\" id=\"BugFreeQuery_value999999\" name=\"BugFreeQuery[value999999]\">';
+var field_resolved_at_value = '<input type=\"text\"  size=\"16\" value=\"\" id=\"BugFreeQuery_value999999\" name=\"BugFreeQuery[value999999]\">';
+var field_duplicate_id_value = '<input type=\"text\"  size=\"16\" value=\"\" id=\"BugFreeQuery_value999999\" name=\"BugFreeQuery[value999999]\">';
+var field_closed_by_name_value = '<input type=\"text\"  size=\"16\" value=\"\" id=\"BugFreeQuery_value999999\" name=\"BugFreeQuery[value999999]\">';
+var field_closed_at_value = '<input type=\"text\"  size=\"16\" value=\"\" id=\"BugFreeQuery_value999999\" name=\"BugFreeQuery[value999999]\">';
+var field_related_bug_value = '<input type=\"text\"  size=\"16\" value=\"\" id=\"BugFreeQuery_value999999\" name=\"BugFreeQuery[value999999]\">';
+var field_related_case_value = '<input type=\"text\"  size=\"16\" value=\"\" id=\"BugFreeQuery_value999999\" name=\"BugFreeQuery[value999999]\">';
+var field_related_result_value = '<input type=\"text\"  size=\"16\" value=\"\" id=\"BugFreeQuery_value999999\" name=\"BugFreeQuery[value999999]\">';
+var field_modified_by_value = '<input type=\"text\"  size=\"16\" value=\"\" id=\"BugFreeQuery_value999999\" name=\"BugFreeQuery[value999999]\">';
+var field_reopen_count_value = '<input type=\"text\"  size=\"16\" value=\"\" id=\"BugFreeQuery_value999999\" name=\"BugFreeQuery[value999999]\">';
+var field_solution_value = '<select id=\"BugFreeQuery_value999999\" style=\"width:100%\" name=\"BugFreeQuery[value999999]\"><option value=\"\" selected=\"selected\"></option><option value=\"By Design\">By Design</option><option value=\"Duplicate\">Duplicate</option><option value=\"External\">External</option><option value=\"Fixed\">Fixed</option><option value=\"Not Repro\">Not Repro</option><option value=\"Postponed\">Postponed</option><option value=\"Won&#039;t Fix\">Won&#039;t Fix</option></select>';
+var field_OpenedBuild_value = '<input type=\"text\"  size=\"16\" value=\"\" id=\"BugFreeQuery_value999999\" name=\"BugFreeQuery[value999999]\">';
+var field_BugSubStatus_value = '<select id=\"BugFreeQuery_value999999\" style=\"width:100%\" name=\"BugFreeQuery[value999999]\"><option value=\"\" selected=\"selected\"></option><option value=\"Hold\">Hold</option><option value=\"Local Fix\">Local Fix</option><option value=\"Checked In\">Checked In</option><option value=\"Can&#039;t Regress\">Can&#039;t Regress</option></select>';
+var field_BugMachine_value = '<input type=\"text\"  size=\"16\" value=\"\" id=\"BugFreeQuery_value999999\" name=\"BugFreeQuery[value999999]\">';
+var field_BugKeyword_value = '<input type=\"text\"  size=\"16\" value=\"\" id=\"BugFreeQuery_value999999\" name=\"BugFreeQuery[value999999]\">';
+var field_ResolvedBuild_value = '<input type=\"text\"  size=\"16\" value=\"\" id=\"BugFreeQuery_value999999\" name=\"BugFreeQuery[value999999]\">';
+var field_BugType_value = '<select id=\"BugFreeQuery_value999999\" style=\"width:100%\" name=\"BugFreeQuery[value999999]\"><option value=\"\" selected=\"selected\"></option><option value=\"代码错误\">代码错误</option><option value=\"用户界面\">用户界面</option><option value=\"需求变动\">需求变动</option><option value=\"新增需求\">新增需求</option><option value=\"需求文档\">需求文档</option><option value=\"设计文档\">设计文档</option><option value=\"配置相关\">配置相关</option><option value=\"安装部署\">安装部署</option><option value=\"安全相关\">安全相关</option><option value=\"性能压力\">性能压力</option><option value=\"标准规范\">标准规范</option><option value=\"自动化脚本\">自动化脚本</option><option value=\"事务跟踪\">事务跟踪</option><option value=\"Bad Case\">Bad Case</option><option value=\"其他\">其他</option></select>';
+var field_HowFound_value = '<select id=\"BugFreeQuery_value999999\" style=\"width:100%\" name=\"BugFreeQuery[value999999]\"><option value=\"\" selected=\"selected\"></option><option value=\"功能测试\">功能测试</option><option value=\"单元测试\">单元测试</option><option value=\"版本验证测试\">版本验证测试</option><option value=\"集成测试\">集成测试</option><option value=\"系统测试\">系统测试</option><option value=\"冒烟测试\">冒烟测试</option><option value=\"验收测试\">验收测试</option><option value=\"Bug Bash\">Bug Bash</option><option value=\"随机测试\">随机测试</option><option value=\"回归测试\">回归测试</option><option value=\"需求检查\">需求检查</option><option value=\"设计检查\">设计检查</option><option value=\"代码检查\">代码检查</option><option value=\"上线遗漏\">上线遗漏</option><option value=\"客户反馈\">客户反馈</option><option value=\"合作伙伴\">合作伙伴</option><option value=\"其他\">其他</option></select>';
+var field_BugOS_value = '<select id=\"BugFreeQuery_value999999\" style=\"width:100%\" name=\"BugFreeQuery[value999999]\"><option value=\"\" selected=\"selected\"></option><option value=\"全部\">全部</option><option value=\"Windows 7\">Windows 7</option><option value=\"Windows Vista\">Windows Vista</option><option value=\"Windows XP\">Windows XP</option><option value=\"Windows 2000\">Windows 2000</option><option value=\"Linux\">Linux</option><option value=\"FreeBSD\">FreeBSD</option><option value=\"Unix\">Unix</option><option value=\"Mac OS\">Mac OS</option><option value=\"其他\">其他</option></select>';
+var field_BugBrowser_value = '<select id=\"BugFreeQuery_value999999\" style=\"width:100%\" name=\"BugFreeQuery[value999999]\"><option value=\"\" selected=\"selected\"></option><option value=\"全部\">全部</option><option value=\"IE 8.0\">IE 8.0</option><option value=\"IE 7.0\">IE 7.0</option><option value=\"IE 6.0\">IE 6.0</option><option value=\"FireFox 4.0\">FireFox 4.0</option><option value=\"FireFox 3.0\">FireFox 3.0</option><option value=\"FireFox 2.0\">FireFox 2.0</option><option value=\"Chrome\">Chrome</option><option value=\"Safari\">Safari</option><option value=\"Opera\">Opera</option><option value=\"其他\">其他</option></select>';
+var field_mark_value = '<select id=\"BugFreeQuery_value999999\" style=\"width:100%\" name=\"BugFreeQuery[value999999]\"><option value=\"\" selected=\"selected\"></option><option value=\"0\">未标记</option><option value=\"1\">已标记</option></select>';
+var field_number_operator = '<select id=\"BugFreeQuery_operator999999\" style=\"width:100%\" onchange=\"updateQueryValue(999999,true);\" name=\"BugFreeQuery[operator999999]\"><option value=\"=\">等于</option><option value=\"!=\">不等于</option><option value=\"&gt;\">大于</option><option value=\"&lt;\">小于</option><option value=\"&gt;=\">大于等于</option><option value=\"&lt;=\">小于等于</option><option value=\"IN\">包含</option></select>';
+var field_date_operator = '<select id=\"BugFreeQuery_operator999999\" style=\"width:100%\" onchange=\"updateQueryValue(999999,true);\" name=\"BugFreeQuery[operator999999]\"><option value=\"=\">等于</option><option value=\"!=\">不等于</option><option value=\"&gt;\">大于</option><option value=\"&lt;\">小于</option><option value=\"&gt;=\">大于等于</option><option value=\"&lt;=\">小于等于</option></select>';
+var field_string_operator = '<select id=\"BugFreeQuery_operator999999\" style=\"width:100%\" onchange=\"updateQueryValue(999999,true);\" name=\"BugFreeQuery[operator999999]\"><option value=\"=\">等于</option><option value=\"!=\">不等于</option><option value=\"LIKE\">包含</option><option value=\"NOT LIKE\">不包含</option></select>';
+var field_people_operator = '<select id=\"BugFreeQuery_operator999999\" style=\"width:100%\" onchange=\"updateQueryValue(999999,true);\" name=\"BugFreeQuery[operator999999]\"><option value=\"=\">等于</option><option value=\"!=\">不等于</option></select>';
+var field_multipeople_operator = '<select id=\"BugFreeQuery_operator999999\" style=\"width:100%\" onchange=\"updateQueryValue(999999,true);\" name=\"BugFreeQuery[operator999999]\"><option value=\"=\">等于</option></select>';
+var field_option_operator = '<select id=\"BugFreeQuery_operator999999\" style=\"width:100%\" onchange=\"updateQueryValue(999999,true);\" name=\"BugFreeQuery[operator999999]\"><option value=\"=\">等于</option><option value=\"!=\">不等于</option></select>';
+var field_multioption_operator = '<select id=\"BugFreeQuery_operator999999\" style=\"width:100%\" onchange=\"updateQueryValue(999999,true);\" name=\"BugFreeQuery[operator999999]\"><option value=\"=\">等于</option><option value=\"!=\">不等于</option><option value=\"LIKE\">包含</option><option value=\"NOT LIKE\">不包含</option></select>';
+var field_path_operator = '<select id=\"BugFreeQuery_operator999999\" style=\"width:100%\" onchange=\"updateQueryValue(999999,true);\" name=\"BugFreeQuery[operator999999]\"><option value=\"LIKE\">包含</option><option value=\"NOT LIKE\">不包含</option><option value=\"UNDER\">在某路径下</option></select>';
+function updateQueryValue(index,isKeepOldValue)
+{
+    var $fieldName = $('#'+searchParamsPreFix+'_field'+index).val();
+    var $operatorValue = $('#'+searchParamsPreFix+'_operator'+index).val();
+    var $oldFieldValue = $('#'+searchParamsPreFix+'_value'+index).val();
+    if(('severity' == $fieldName || 'priority' == $fieldName) && 'IN' == $operatorValue)
+    {
+        $('#'+searchParamsPreFix+'_value'+index).replaceWith('<input type="text" size="16" value="" id="BugFreeQuery_value'+index+'" name="BugFreeQuery[value'+index+']">');
+        if(true == isKeepOldValue)
+        {
+            $('#'+searchParamsPreFix+'_value'+index).attr('value',$oldFieldValue);
+        }
+        return;
+    }
+    
+    eval('var fieldValueSelect='+'field_'+$fieldName+'_value;');
+    var $newValue = replaceTemplateWithIndex(fieldValueSelect,index);
+    $('#'+searchParamsPreFix+'_value'+index).replaceWith($newValue);
+    eval('var fieldType='+'field_'+$fieldName+'_type');
+    if(fieldType == 'people')
+    {
+        if('assign_to_name' == $fieldName)
+        {
+            if('bug' == infoType)
+            {
+                eval("$('#"+searchParamsPreFix+'_value'+index+"').autocompleter('/bugfree3.0.4/index.php/search/userList?p=-3')");
+            }
+            else if('case' == infoType)
+            {
+                eval("$('#"+searchParamsPreFix+'_value'+index+"').autocompleter('/bugfree3.0.4/index.php/search/userList?p=-1')");
+            }
+            else if('result' == infoType)
+            {
+                eval("$('#"+searchParamsPreFix+'_value'+index+"').autocompleter('/bugfree3.0.4/index.php/search/userList?p=-2')");
+            }
+        }
+        else
+        {
+            eval("$('#"+searchParamsPreFix+'_value'+index+"').autocompleter('/bugfree3.0.4/index.php/search/userList')");
+        }      
+    }
+    else if(fieldType == 'multipeople')
+    {
+        eval("$('#"+searchParamsPreFix+'_value'+index+"').autocompleter('/bugfree3.0.4/index.php/search/userList')");
+    }
+    if(true == isKeepOldValue)
+    {
+        $('#'+searchParamsPreFix+'_value'+index).attr('value',$oldFieldValue);
+    }
+    
+}
+
+function updateQueryOperator(index,isKeepOldValue)
+{
+    var $oldOperatorValue = $('#'+searchParamsPreFix+'_operator'+index).val();
+    var $fieldName = $('#'+searchParamsPreFix+'_field'+index).val();
+    eval('var fieldType='+'field_'+$fieldName+'_type');
+    var $fieldName = $('#'+searchParamsPreFix+'_field'+index).val();
+    eval('var fieldOperatorSelect='+'field_'+fieldType+'_operator');
+    var $operatorValue = replaceTemplateWithIndex(fieldOperatorSelect,index);
+    $('#'+searchParamsPreFix+'_operator'+index).replaceWith($operatorValue);
+    if(true == isKeepOldValue)
+    {
+        $('#'+searchParamsPreFix+'_operator'+index).attr('value',$oldOperatorValue);
+    }
+}
+
+function isDateNumber(str){
+    var reg = /^-?[1-9]\d*$|^0$|^(19|20)\d{2}-(0?\d|1[012])-(0?\d|[12]\d|3[01])$/
+    if(reg.test(str))
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+function validateDateFormat()
+{
+    var $fieldArr = $("select[id*="+searchParamsPreFix+"_field]");
+    var resultStr = '';
+    $fieldArr.each(function(){
+        var $selectedValue = $(this).val();
+        eval('var fieldType='+'field_'+$selectedValue+'_type');
+        var fieldId = $(this).attr('id');
+        var filedPrefix = searchParamsPreFix+'_field';
+        var indexNum = fieldId.substr(filedPrefix.length,fieldId.length);
+        if('date' == fieldType)
+        {
+            var dateValue = $('#'+searchParamsPreFix+'_value'+indexNum).val();
+            if('' != dateValue)
+            {
+                if(!isDateNumber(dateValue))
+                {
+                    resultStr = 'failed';
+                    return false;
+                }
+            }
+         }
+    });
+    return resultStr;
+}
+
+function updateQueryRow(index,isKeepOldValue)
+{
+    updateQueryOperator(index,isKeepOldValue);
+    updateQueryValue(index,isKeepOldValue);
+}
+function validateParentheses()
+{
+    var stack = new Array();
+    var $parenthesesArr = $("select[id*=ParenthesesName]");
+    $parenthesesArr.css('color','black');
+    $parenthesesArr.each(function(){
+        var $selectedValue = $(this).find("option:selected").text();
+        $selectedValue = jQuery.trim($selectedValue);
+        if('' != $selectedValue)
+        {
+            if(stack.length == 0)
+            {
+                stack.push($(this));
+            }
+            else
+            {
+                if('(' == $selectedValue)
+                {
+                    stack.push($(this));
+                }
+                else
+                {
+                    var $preObj = stack.pop();
+                    if('(' != $preObj.find("option:selected").text())
+                    {
+                        stack.push($preObj);
+                        stack.push($(this));
+                    }
+                }
+            }
+
+        }
+    });
+    if(stack.length>0)
+    {
+        $("#SaveQuery").attr("disabled","disabled");
+        $("#SaveQuery").css('color','grey');
+        $("#SaveQuery").css('cursor','default');
+
+        $("#PostQuery").attr("disabled","disabled");
+        $("#PostQuery").css('color','grey');
+        $("#PostQuery").css('cursor','default');
+    }
+    else
+    {
+        $("#PostQuery").removeAttr("disabled");
+        $("#PostQuery").css('color','#000000');
+        $("#PostQuery").css('cursor','pointer');
+        $("#SaveQuery").removeAttr("disabled");
+        $("#SaveQuery").css('color','#000000');
+        $("#SaveQuery").css('cursor','pointer');
+    }
+    for(var i=0;i<stack.length;i++)
+    {
+        stack[i].css('color','red');
+    }
+
+}
+
+function setSearchConditionOrder()
+{
+    var rowOrder = "";
+    var $searchRows = $("tr[id^=SearchConditionRow]");
+    $searchRows.each(function(){
+        rowOrder += $(this).attr("id")+",";
+    });
+    $("#"+searchParamsPreFix+"_QueryRowOrder").attr("value",rowOrder);
+}
+
+function addSearchField(fieldRowNum)
+{
+    var $newSearchRow = replaceTemplateWithIndex(searchConditionTmp,searchConditionRowNum);
+    $("#SearchConditionRow"+fieldRowNum).after($($newSearchRow));
+    var $rowNum = $(".SearchConditionRow").length;
+    if($rowNum >=limitedFieldCount )
+    {
+        $('.add_search_button').hide();
+    }
+    if($rowNum >1 )
+    {
+        $('.cancel_search_button').show();
+    }
+    searchConditionRowNum++;
+    setSearchHeight();
+}
+
+function replaceTemplateWithIndex($templateStr,$index)
+{
+    raRegExp = new RegExp(templateFieldNumber,"g");
+    return $templateStr.replace(raRegExp,$index);
+}
+
+
+function removeSearchField(fieldRowNum)
+{
+    $("#SearchConditionRow"+fieldRowNum).remove();
+    validateParentheses();
+    var $rowNum = $(".SearchConditionRow").length;
+    if($rowNum <2 )
+    {
+        $('.cancel_search_button').hide();
+    }
+    if($rowNum <limitedFieldCount)
+    {
+        $('.add_search_button').show();
+    }
+    setSearchHeight();
+}
+function saveQuery($title)
+{   
+    $title = jQuery.trim($title);
+    $titleLength = $title.length;
+    if($title == 'Assigned To Me'||$title=='Opended By Me'||$title=='Mailed To Me'||
+        $title=='Marked by me'||$title=='指派给我'||$title=='抄送给我'||
+        $title=='由我创建'||$title=='我的标记')
+    {
+        alert('查询标题与系统保留名称冲突，请修改名称！');
+        return;
+    }
+    if($titleLength<1 || $titleLength>20)
+    {
+        alert('标题长度必须为 1~20');
+        return;
+    }
+
+    $queryTitleExisted = false;
+    $('a.user_query_a').each(function(){
+        $text = $(this).text();
+        if($text == $title)
+        {
+            $queryTitleExisted = true;
+            return false;
+        }
+        else
+        {
+            return true;
+        }       
+    });
+
+
+    if($queryTitleExisted)
+    {
+        if(!confirm('确定修改查询条件'+
+            ' '+$title+'?'))
+        {
+            return;
+        }
+    }
+    $('#queryTitle').attr('value',$title);
+    $('#saveQuery').attr('value','1');
+    $("#save_query_dialog").dialog("close");
+    submitSearchForm();
+    return false;
+}
+
+function markQueryTitle()
+{
+    var $queryTitle = $('#queryTitle').attr('value');
+    $('div.querydiv a.user_query_a').each(function(){
+        $text = $(this).text();
+        if($text == $queryTitle)
+        {
+            $(this).css('color','#115FA2');
+            $(this).css('font-weight','bold');
+            return ;
+        }
+    });
+
+    $('div.querydiv a.basic').each(function(){
+        $text = $(this).attr('title');
+        if($text == $queryTitle)
+        {
+            $(this).css('color','#115FA2');
+            $(this).css('font-weight','bold');
+            return ;
+        }
+    });
+}
+
+function submitSearchForm()
+{
+    if('' != validateDateFormat())
+    {
+        alert(dateFormatError);
+        return false;
+    }
+    document.SearchBug.submit();
+}
+$(function(){
+    markQueryTitle();
+    $rowNum = $(".SearchConditionRow").length;
+    searchConditionRowNum = $rowNum;
+    $('#SearchBug').submit(function(){
+        setSearchConditionOrder();
+        submitSearchForm();
+    })
+    for(var i=1;i<$rowNum;i++)
+    {
+        updateQueryRow(i,true);
+    }
+})
+</script>
+
+
+<form method="post" action="/bugfree3.0.4/index.php/bug/list/1" name="SearchBug" id="SearchBug">
+<input type="hidden" value="1" id="queryaction" name="queryaction">
+<input type="hidden" value="" id="queryTitle" name="queryTitle" >
+<input type="hidden" value="0" id="saveQuery" name="saveQuery">
+<input type="hidden" value="0" id="reset" name="reset">
+<input type="hidden" value="" id="showField" name="showField">
+   <div id="SearchBlankCover" style="background-color: #F0F0F0;">
+   <table id="searchtable" style="background-color: #F0F0F0;">
+    <caption style="padding-bottom: 1px; padding-top: 3px;text-align: center;font-weight: bold;font-size: 13px;">查询条件</caption>
+        <colgroup>
+          <col width="6%" span="1">
+          <col width="20%" span="1">
+          <col width="20%" span="1">
+          <col width="30%" span="1">
+          <col width="6%" span="1">
+          <col width="8%" span="1">
+          <col width="10%" span="1">
+        </colgroup>
+        <tbody>
+            <tr class="SearchConditionRow" id="SearchConditionRow0"><td><input type="hidden" value="" name="BugFreeQuery[leftParenthesesName0]" id="BugFreeQuery_leftParenthesesName0" /></td><td><select id="BugFreeQuery_field0" style="color:#878787;" name="BugFreeQuery[field0]">
+<option value="module_name" selected="selected">模块路径</option>
+</select></td><td><select id="BugFreeQuery_operator0" style="width:100%;color:#878787;" name="BugFreeQuery[operator0]">
+<option value="UNDER" selected="selected">在某路径下</option>
+</select></td><td><input size="16" id="BugFreeQuery_value0" readonly="readonly" style="color:#878787;" type="text" value="Sample Product" name="BugFreeQuery[value0]" /></td><td><input type="hidden" value="" name="BugFreeQuery[rightParenthesesName0]" id="BugFreeQuery_rightParenthesesName0" /></td><td><select id="BugFreeQuery_andor0" style="width:60px;color:#878787;" name="BugFreeQuery[andor0]">
+<option value="And" selected="selected">并且</option>
+</select></td><td><a class="add_search_button"  href="javascript:addSearchField(0);"><img src="/bugfree3.0.4/themes/classic/assets/images/add_search.gif"/></a></td></tr>        <tr>
+        <td colspan="7">
+        <center>
+            <input type="button" onclick="setSearchConditionOrder();submitSearchForm();" value="提交查询" id="PostQuery" name="PostQuery" class="btn">
+            <input type="button" onclick="setSearchConditionOrder();$('#save_query_dialog').dialog('open'); return false;" value="保存查询" id="SaveQuery" name="SaveQuery" class="btn">
+            <input type="button" onclick="$('#reset').attr('value',1);submitSearchForm();" value="重置查询" class="btn">
+        </center>
+        </td>
+    </tr>
+  </tbody></table>
+  <input type="hidden" value="" name="BugFreeQuery[queryRowOrder]" id="BugFreeQuery_QueryRowOrder">
+  </div>
+</form>
+
+<div id="save_query_dialog">
+<table class="dialog-table" >
+      <tbody>
+      <tr>
+        <td style="text-align:center" >
+        <input type="text" maxlength=20 id="dialogQueryTitle" value=""/><br/><br/></td>
+      </tr>
+      <tr>
+        <td style="text-align:center" ><input onclick="saveQuery($(&quot;#dialogQueryTitle&quot;).val());" name="yt0" type="button" value="保存查询" /></td>
+      </tr>
+    </tbody></table></div><script type="text/javascript">
+$(function(){
+        var $selectList = '<select multiple=\"multiple\" style=\"width:95%;height:200px;\" name=\"fieldsToSelectList\" id=\"fieldsToSelectList\"><option value=\"module_name\">模块路径</option><option value=\"bug_status\">状态</option><option value=\"mail_to\">抄送给</option><option value=\"updated_by_name\">修改者</option><option value=\"created_at\">创建日期</option><option value=\"resolved_at\">解决日期</option><option value=\"duplicate_id\">重复 Bug</option><option value=\"closed_by_name\">关闭者</option><option value=\"closed_at\">关闭日期</option><option value=\"related_bug\">相关 Bug</option><option value=\"related_case\">相关 Case</option><option value=\"related_result\">相关 Result</option><option value=\"modified_by\">相关编辑者</option><option value=\"reopen_count\">激活次数</option><option value=\"OpenedBuild\">创建 Build</option><option value=\"BugSubStatus\">处理状态</option><option value=\"BugMachine\">机器配置</option><option value=\"BugKeyword\">关键词</option><option value=\"ResolvedBuild\">解决 Build</option><option value=\"BugType\">类型</option><option value=\"HowFound\">如何发现</option><option value=\"BugOS\">操作系统</option><option value=\"BugBrowser\">浏览器</option></select>';
+        var $showList = '<select multiple=\"multiple\" style=\"width:95%;height:200px;\" name=\"fieldsToShowList\" id=\"fieldsToShowList\"><option value=\"id\">ID</option><option value=\"severity\">严重程度</option><option value=\"priority\">优先级</option><option value=\"title\">Bug标题</option><option value=\"created_by_name\">创建者</option><option value=\"assign_to_name\">指派给</option><option value=\"resolved_by_name\">解决者</option><option value=\"solution\">解决方案</option><option value=\"updated_at\">修改日期</option></select>';
+	$('#addField').click(function() {
+		$('#fieldsToSelectList option:selected').appendTo('#fieldsToShowList');
+	});
+	$('#deleteField').click(function() {
+		$('#fieldsToShowList option:selected').appendTo('#fieldsToSelectList');
+	});
+	$('#addAllField').click(function() {
+		$('#fieldsToSelectList option').appendTo('#fieldsToShowList');
+	});
+	$('#deleteAllField').click(function() {
+		$('#fieldsToShowList option').appendTo('#fieldsToSelectList');
+	});
+        addDbClickFunction();
+        $('#upButton').click(function(){
+            var $selectedItems = $('#fieldsToShowList option:selected');
+            $selectedItems.each(function(){
+                $(this).after($(this).prev());
+            })
+        });
+
+        $('#downButton').click(function(){
+            var $selectedItems = $('#fieldsToShowList option:selected');
+            $selectedItems.each(function(){
+                $(this).before($(this).next());
+            })
+        })
+
+        $('#defaultButton').click(function(){
+            $('#selectFieldDiv select').replaceWith($selectList);
+            $('#showFieldDiv select').replaceWith($showList);
+            addDbClickFunction();
+        })
+});
+
+function addDbClickFunction()
+{
+    $('#fieldsToSelectList').dblclick(function(){
+            $("option:selected",this).appendTo('#fieldsToShowList');
+    });
+    $('#fieldsToShowList').dblclick(function(){
+       $("option:selected",this).appendTo('#fieldsToSelectList');
+    });
+}
+
+function setSelectField()
+{
+    var $selectedFields = $('#fieldsToShowList option');
+    var $selectFieldStr = '';
+    $selectedFields.each(function(){
+        $selectFieldStr += $(this).val() +',';
+    });
+    if('' == $selectFieldStr)
+    {
+        alert('显示字段不能为空');
+        return;
+    }
+    $('#showField').attr('value',$selectFieldStr);
+    $('#select_show_field_dialog').dialog('close');
+    setSearchConditionOrder();
+    document.SearchBug.submit();
+}
+</script>
+
+<div id="select_show_field_dialog">
+<table class="dialog-table" id="CustomSetTable">
+      <tbody>
+      <tr align="center" valign="middle" class="BgRow">
+        <td align="left" width="5%">&nbsp;</td>
+        <td width="20%">
+          <fieldset style="border: 0pt none; font-size: 12px;">
+            <legend>可选字段</legend><div id="selectFieldDiv"><select multiple="multiple" style="width:95%;height:200px;" name="fieldsToSelectList" id="fieldsToSelectList">
+<option value="module_name">模块路径</option>
+<option value="bug_status">状态</option>
+<option value="mail_to">抄送给</option>
+<option value="updated_by_name">修改者</option>
+<option value="created_at">创建日期</option>
+<option value="resolved_at">解决日期</option>
+<option value="duplicate_id">重复 Bug</option>
+<option value="closed_by_name">关闭者</option>
+<option value="closed_at">关闭日期</option>
+<option value="related_bug">相关 Bug</option>
+<option value="related_case">相关 Case</option>
+<option value="related_result">相关 Result</option>
+<option value="modified_by">相关编辑者</option>
+<option value="reopen_count">激活次数</option>
+<option value="OpenedBuild">创建 Build</option>
+<option value="BugSubStatus">处理状态</option>
+<option value="BugMachine">机器配置</option>
+<option value="BugKeyword">关键词</option>
+<option value="ResolvedBuild">解决 Build</option>
+<option value="BugType">类型</option>
+<option value="HowFound">如何发现</option>
+<option value="BugOS">操作系统</option>
+<option value="BugBrowser">浏览器</option>
+</select></div></fieldset>
+        </td>
+        <td width="10%">
+            <input style="width:50px" type="button" id="addAllField" name="addAllField" value=">>|"><br>
+            <input style="width:50px" type="button" id="addField" name="addField"  value=">>"><br>
+            <input style="width:50px" type="button" id="deleteField" name="deleteField" value="<<"><br>
+            <input style="width:50px" type="button" id="deleteAllField" name="deleteAllField" value="|<<">
+        </td>
+        <td width="20%">
+          <fieldset style="border: 0pt none; font-size: 12px;">
+          <legend>要显示的字段</legend><div id="showFieldDiv"><select multiple="multiple" style="width:95%;height:200px;" name="fieldsToShowList" id="fieldsToShowList">
+<option value="id">ID</option>
+<option value="severity">严重程度</option>
+<option value="priority">优先级</option>
+<option value="title">Bug标题</option>
+<option value="created_by_name">创建者</option>
+<option value="assign_to_name">指派给</option>
+<option value="resolved_by_name">解决者</option>
+<option value="solution">解决方案</option>
+<option value="updated_at">修改日期</option>
+</select></div></fieldset>
+        </td>
+        <td align="left" width="8%">
+          <input type="button" id="upButton" name="upButton"  style="width: 30px;" value="↑"><br>
+          <input type="button" id="downButton" name="downButton"  style="width: 30px;" value="↓">
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align:center" colspan="5">
+          <input type="button" style="width:120px" onclick="setSelectField();"  value="确定">
+          <input type="button" style="width:120px" id="defaultButton" name="defaultButton"  value="默认字段"><br>
+        </td>
+      </tr>
+    </tbody></table></div><script type="text/javascript" src="/bugfree3.0.4/themes/classic/assets/js/ajaxfileupload.js"></script>
+<script type="text/javascript">
+    var $productId = 1;
+    var $infoType = 'bug';
+    function ajaxFileUpload(){
+        $('#uploadbutton').attr('disabled','disable');
+        $("#loading").show();
+        $.ajaxFileUpload(
+        {
+            url:'/bugfree3.0.4/index.php/search/infoImport',
+            secureuri:false,
+            fileElementId:'casefilename',
+            dataType: 'json',
+            data:{product_id:$productId,type:$infoType},
+            success: function (data, status)
+            {
+                $('#uploadbutton').removeAttr('disabled');
+                $("#loading").hide();
+                alert(data.msg);
+                $('#import_info_dialog').dialog('close');
+                window.location.href=window.location.href;
+                window.location.reload;
+            },
+            error: function (data, status, e)
+            {
+                $('#uploadbutton').removeAttr('disabled');
+                $("#loading").hide();
+                alert('failed'+data.msg);
+            }
+        }
+    );
+    }
+</script>
+
+<div style="display:none" id="import_info_dialog">
+<form id="fileuploader" method="post" action="" enctype="multipart/form-data" style="text-align: center;">
+    <span style="color:red;font-size: 14px;">请注意，注释和步骤的内容应为html格式(如空格为&amp;nbsp)<br/>如不需要编辑请先删除相应的列,以免被误操作</span><br/>
+    <input type="file" id="casefilename" name="casefilename" size="30"/>
+    <br/><br/>
+    <input type="button" id="uploadbutton" class="btn" value="导入" onclick="ajaxFileUpload()"/>
+    <img id="loading" src="/bugfree3.0.4/themes/classic/assets/images/loading.gif" style="display:none;" />
+</form>
+</div><div id="searchresult-grid">
+<div style="margin:6px 0 0 5px;float:left;"><a onclick="$('#select_show_field_dialog').dialog('open'); return false;" id="CustomSetLink" href="javascript:void(0);">自定义显示</a>&nbsp;|&nbsp;<a href="javascript:exportXml();">导出</a>&nbsp;|&nbsp;<a onclick="$('#import_info_dialog').dialog('open'); return false;" href="javascript:void(0);">导入</a>&nbsp;|&nbsp;<span id="VReport"><a target="_blank" href="/bugfree3.0.4/index.php/report/index?type=bug&product_id=1">统计报表</a></span></div><div class="pager"><b>1</b>/<b>1</b>页 总数:<b>1</b><select class="page-size" onchange="var data = {&quot;pagesize&quot;: $(this).val()};$.get(&quot;/bugfree3.0.4/index.php/page/setPageSize&quot;, data, function(){window.location.href=window.location.href;window.location.reload;});" name="pageSize" id="pageSize">
+<option value="10">10</option>
+<option value="20" selected="selected">20</option>
+<option value="35">35</option>
+<option value="50">50</option>
+<option value="100">100</option>
+</select><ul id="yw0" class="yiiPager"><li class="first hidden"><a href="/bugfree3.0.4/index.php/bug/list/1">首页</a></li>
+<li class="previous hidden"><a href="/bugfree3.0.4/index.php/bug/list/1">上一页</a></li>
+<li class="next hidden"><a href="/bugfree3.0.4/index.php/bug/list/1">下一页</a></li>
+<li class="last hidden"><a href="/bugfree3.0.4/index.php/bug/list/1">尾页</a></li></ul></div><div id="SearchResultDiv" style="overflow: auto; width:100%; "><table style="white-space:nowrap"  class="items">
+<thead>
+<tr>
+<th id="searchresult-grid_c0"><a href="/bugfree3.0.4/index.php/bug/list/1?sort=mark-id.desc">标记</a></th><th id="searchresult-grid_c1"><a class="desc" href="/bugfree3.0.4/index.php/bug/list/1?sort=id">ID</a></th><th id="searchresult-grid_c2"><a href="/bugfree3.0.4/index.php/bug/list/1?sort=severity-id.desc">严重程度</a></th><th id="searchresult-grid_c3"><a href="/bugfree3.0.4/index.php/bug/list/1?sort=priority-id.desc">优先级</a></th><th id="searchresult-grid_c4"><a href="/bugfree3.0.4/index.php/bug/list/1?sort=title-id.desc">Bug标题</a></th><th id="searchresult-grid_c5"><a href="/bugfree3.0.4/index.php/bug/list/1?sort=created_by_name-id.desc">创建者</a></th><th id="searchresult-grid_c6"><a href="/bugfree3.0.4/index.php/bug/list/1?sort=assign_to_name-id.desc">指派给</a></th><th id="searchresult-grid_c7"><a href="/bugfree3.0.4/index.php/bug/list/1?sort=resolved_by_name-id.desc">解决者</a></th><th id="searchresult-grid_c8"><a href="/bugfree3.0.4/index.php/bug/list/1?sort=solution-id.desc">解决方案</a></th><th id="searchresult-grid_c9"><a href="/bugfree3.0.4/index.php/bug/list/1?sort=updated_at-id.desc">修改日期</a></th></tr>
+</thead>
+<tbody>
+<tr class="bugstatus_active"><td style="text-align:center;"><a id="marklink1" name="marklink1" href="javascript:mark(1,1);void(0);"><img src="/bugfree3.0.4/themes/classic/assets/images/flag_1.gif"/></a></td><td>1</td><td><a href="/bugfree3.0.4/index.php/bug/list/1?filter=severity%7C4">4</a></td><td><a href="/bugfree3.0.4/index.php/bug/list/1?filter=priority%7C4">4</a></td><td class="title"><span class="title"><a href="/bugfree3.0.4/index.php/bug/1" target="_blank" title="Sample：欢迎使用BugFree！">Sample：欢迎使用BugFree！</a></span></td><td><a href="/bugfree3.0.4/index.php/bug/list/1?filter=created_by_name%7C%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%91%98">系统管理员</a></td><td><a href="/bugfree3.0.4/index.php/bug/list/1?filter=assign_to_name%7CActive">Active</a></td><td><a href="/bugfree3.0.4/index.php/bug/list/1?filter=resolved_by_name%7C"></a></td><td><a href="/bugfree3.0.4/index.php/bug/list/1?filter=solution%7C"></a></td><td><a href="/bugfree3.0.4/index.php/bug/list/1?filter=updated_at%7C2016-08-03">2016-08-03</a></td></tr>
+</tbody>
+</table></div></div></div>
+            </div>
+        </div>
+    <script type="text/javascript" src="/bugfree3.0.4/assets/35fa7975/jui/js/jquery-ui.min.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+var product_module_tree = $("#product_module_tree").html("<ul class=\"tree\" id=\"ztree_product_module_tree\"></ul>"); product_module_treeTree = $("#product_module_tree ul").zTree({
+                    showIcon: false,
+                    showLine: true,
+                    treeNodeKey: "id",
+                    expandSpeed: "",
+                    async: true,
+                    asyncUrl: "/bugfree3.0.4/index.php/search/getProductModule",
+                    asyncParam: ["id"],
+                    asyncParamOther : ["product_id", 1,"productmodule_id",0],
+                    callback: {
+                            click:reloadPage,
+                            asyncSuccess:zTreeOnAsyncSuccess
+                    }
+            }, []);var node = product_module_treeTree.getNodeByParam("id",0);product_module_treeTree.selectNode(node);
+$("#search_autocomplete").autocompleter('/bugfree3.0.4/index.php/search/userList?p=-3', {});
+jQuery('#save_query_dialog').dialog({'title':'查询标题','autoOpen':false,'width':'300px','modal':true,'height':'auto','resizable':false});
+jQuery('#select_show_field_dialog').dialog({'title':'自定义显示','autoOpen':false,'modal':true,'width':'600px','height':'auto','resizable':false});
+jQuery('#import_info_dialog').dialog({'title':'请选择需要导入的 XML 文件！','autoOpen':false,'width':'400px','modal':true,'height':'auto','resizable':false});
+});
+/*]]>*/
+</script>
+</body>
+</html>
+

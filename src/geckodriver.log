@@ -1,0 +1,555 @@
+1476859497047	geckodriver	INFO	Listening on 127.0.0.1:28034
+1476859499120	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.pi1gTmaTKuc0
+1476859499124	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1476859499145	geckodriver::marionette	INFO	Connecting to Marionette on localhost:28041
+1476859500660	Marionette	INFO	Listening on port 28041
+1476859504509	Marionette	INFO	startBrowser fa58864f-3845-4116-a36d-3478417e4396
+1476859504516	Marionette	INFO	sendAsync fa58864f-3845-4116-a36d-3478417e4396
+1476859505059	Marionette	INFO	sendAsync fa58864f-3845-4116-a36d-3478417e4396
+JavaScript error: https://www.yahoo.com/sy/zz/combo?yui:/3.18.0/yui/yui-min.js&/ss/rapid-3.29.1.js&/os/mit/td/aperollup-min-242cf99e_desktop_advance.js, line 139: NS_ERROR_NOT_INITIALIZED: 
+1476859538587	geckodriver	INFO	Listening on 127.0.0.1:28166
+1476859540632	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.c7O7jpURvJ9W
+1476859540635	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1476859540666	geckodriver::marionette	INFO	Connecting to Marionette on localhost:28175
+1476859542256	Marionette	INFO	Listening on port 28175
+1476859544374	Marionette	INFO	startBrowser 0630b1c0-d967-4868-82be-c286373cf3df
+1476859544381	Marionette	INFO	sendAsync 0630b1c0-d967-4868-82be-c286373cf3df
+1476859544776	Marionette	INFO	sendAsync 0630b1c0-d967-4868-82be-c286373cf3df
+JavaScript error: https://www.yahoo.com/sy/zz/combo?yui:/3.18.0/yui/yui-min.js&/ss/rapid-3.29.1.js&/os/mit/td/aperollup-min-242cf99e_desktop_advance.js, line 139: NS_ERROR_NOT_INITIALIZED: 
+1476859643903	geckodriver	INFO	Listening on 127.0.0.1:28566
+1476859645936	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.mNmYy6NJtASu
+1476859645941	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1476859645966	geckodriver::marionette	INFO	Connecting to Marionette on localhost:28574
+1476859647478	Marionette	INFO	Listening on port 28574
+1476859649851	Marionette	INFO	startBrowser d781c6c7-5e40-4fd5-a0e4-0c874f00bbfe
+1476859649862	Marionette	INFO	sendAsync d781c6c7-5e40-4fd5-a0e4-0c874f00bbfe
+1476859650222	Marionette	INFO	sendAsync d781c6c7-5e40-4fd5-a0e4-0c874f00bbfe
+1476859654557	Marionette	INFO	sendAsync d781c6c7-5e40-4fd5-a0e4-0c874f00bbfe
+1476859746333	geckodriver	INFO	Listening on 127.0.0.1:28701
+1476859748363	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.oVLfK755zzG1
+1476859748367	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1476859748387	geckodriver::marionette	INFO	Connecting to Marionette on localhost:28707
+1476859750784	Marionette	INFO	Listening on port 28707
+1476859753035	Marionette	INFO	startBrowser 9b09cbd1-b48e-4986-8eb0-ebb66c005272
+1476859753043	Marionette	INFO	sendAsync 9b09cbd1-b48e-4986-8eb0-ebb66c005272
+1476859753609	Marionette	INFO	sendAsync 9b09cbd1-b48e-4986-8eb0-ebb66c005272
+1476859759928	Marionette	INFO	sendAsync 9b09cbd1-b48e-4986-8eb0-ebb66c005272
+1476859759948	Marionette	INFO	sendAsync 9b09cbd1-b48e-4986-8eb0-ebb66c005272
+1476859865453	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1476860093852	geckodriver	INFO	Listening on 127.0.0.1:29008
+1476860095870	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.xnqFvdQFAqTB
+1476860095879	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1476860095911	geckodriver::marionette	INFO	Connecting to Marionette on localhost:29014
+1476860099379	Marionette	INFO	Listening on port 29014
+1476860106527	Marionette	INFO	startBrowser 65608179-b6b8-46ea-b3c8-852c80cfe498
+1476860106545	Marionette	INFO	sendAsync 65608179-b6b8-46ea-b3c8-852c80cfe498
+1476860107999	Marionette	INFO	sendAsync 65608179-b6b8-46ea-b3c8-852c80cfe498
+JavaScript warning: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_5492bfab.js, line 98: unreachable code after return statement
+1476860112344	Marionette	INFO	sendAsync 65608179-b6b8-46ea-b3c8-852c80cfe498
+1476860112382	Marionette	INFO	sendAsync 65608179-b6b8-46ea-b3c8-852c80cfe498
+1476860112502	Marionette	INFO	sendAsync 65608179-b6b8-46ea-b3c8-852c80cfe498
+1476860113614	Marionette	INFO	sendAsync 65608179-b6b8-46ea-b3c8-852c80cfe498
+1476860113649	Marionette	INFO	sendAsync 65608179-b6b8-46ea-b3c8-852c80cfe498
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=m&json=1&p=3&sid=1457_13548_17948_21093_18134_21189_21373&req=2&csor=1&cb=jQuery110204760723592016799_1476860111295&_=1476860111297, line 1: TypeError: jQuery110204760723592016799_1476860111295 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=mo&json=1&p=3&sid=1457_13548_17948_21093_18134_21189_21373&req=2&csor=2&pwd=m&cb=jQuery110204760723592016799_1476860111295&_=1476860111298, line 1: TypeError: jQuery110204760723592016799_1476860111295 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=mock&json=1&p=3&sid=1457_13548_17948_21093_18134_21189_21373&req=2&csor=4&pwd=moc&cb=jQuery110204760723592016799_1476860111295&_=1476860111300, line 1: TypeError: jQuery110204760723592016799_1476860111295 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=moc&json=1&p=3&sid=1457_13548_17948_21093_18134_21189_21373&req=2&csor=3&pwd=mo&cb=jQuery110204760723592016799_1476860111295&_=1476860111299, line 1: TypeError: jQuery110204760723592016799_1476860111295 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=mockbir&json=1&p=3&sid=1457_13548_17948_21093_18134_21189_21373&req=2&csor=7&pwd=mockbi&cb=jQuery110204760723592016799_1476860111295&_=1476860111303, line 1: TypeError: jQuery110204760723592016799_1476860111295 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=mockbi&json=1&p=3&sid=1457_13548_17948_21093_18134_21189_21373&req=2&csor=6&pwd=mockb&cb=jQuery110204760723592016799_1476860111295&_=1476860111302, line 1: TypeError: jQuery110204760723592016799_1476860111295 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=mockb&json=1&p=3&sid=1457_13548_17948_21093_18134_21189_21373&req=2&csor=5&pwd=mock&cb=jQuery110204760723592016799_1476860111295&_=1476860111301, line 1: TypeError: jQuery110204760723592016799_1476860111295 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=mockbird&json=1&p=3&sid=1457_13548_17948_21093_18134_21189_21373&req=2&csor=8&pwd=mockbir&cb=jQuery110204760723592016799_1476860111295&_=1476860111304, line 1: TypeError: jQuery110204760723592016799_1476860111295 is not a function
+1476860115563	Marionette	INFO	sendAsync 65608179-b6b8-46ea-b3c8-852c80cfe498
+1476860151441	geckodriver	INFO	Listening on 127.0.0.1:29106
+1476860153483	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.VzT3hpebX84W
+1476860153486	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1476860153504	geckodriver::marionette	INFO	Connecting to Marionette on localhost:29114
+1476860154774	Marionette	INFO	Listening on port 29114
+1476860156737	Marionette	INFO	startBrowser 0ce539a0-e1d8-4681-8ccb-c373c0307c9b
+1476860156746	Marionette	INFO	sendAsync 0ce539a0-e1d8-4681-8ccb-c373c0307c9b
+1476860157250	Marionette	INFO	sendAsync 0ce539a0-e1d8-4681-8ccb-c373c0307c9b
+1476860157927	Marionette	INFO	sendAsync 0ce539a0-e1d8-4681-8ccb-c373c0307c9b
+JavaScript warning: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_5492bfab.js, line 98: unreachable code after return statement
+1476860173565	geckodriver	INFO	Listening on 127.0.0.1:29171
+1476860175593	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.69QU4LWv8ImI
+1476860175595	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1476860175610	geckodriver::marionette	INFO	Connecting to Marionette on localhost:29178
+1476860176968	Marionette	INFO	Listening on port 29178
+1476860178985	Marionette	INFO	startBrowser 9d9a6d18-f74c-427e-a850-11860ecd0a0b
+1476860178993	Marionette	INFO	sendAsync 9d9a6d18-f74c-427e-a850-11860ecd0a0b
+1476860179447	Marionette	INFO	sendAsync 9d9a6d18-f74c-427e-a850-11860ecd0a0b
+1476860180241	Marionette	INFO	sendAsync 9d9a6d18-f74c-427e-a850-11860ecd0a0b
+JavaScript warning: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_5492bfab.js, line 98: unreachable code after return statement
+1476860276039	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1476860277100	geckodriver	INFO	Listening on 127.0.0.1:29278
+1476860279114	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.2ibG2XePKmCO
+1476860279118	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1476860279142	geckodriver::marionette	INFO	Connecting to Marionette on localhost:29285
+1476860280266	Marionette	INFO	Listening on port 29285
+1476860282296	Marionette	INFO	startBrowser 69854333-fdd5-47d2-bc67-1fc9da1b3a60
+1476860282308	Marionette	INFO	sendAsync 69854333-fdd5-47d2-bc67-1fc9da1b3a60
+1476860282735	Marionette	INFO	sendAsync 69854333-fdd5-47d2-bc67-1fc9da1b3a60
+JavaScript warning: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_5492bfab.js, line 98: unreachable code after return statement
+1476860284390	Marionette	INFO	sendAsync 69854333-fdd5-47d2-bc67-1fc9da1b3a60
+1476860284393	Marionette	INFO	sendAsync 69854333-fdd5-47d2-bc67-1fc9da1b3a60
+1476860284399	Marionette	INFO	sendAsync 69854333-fdd5-47d2-bc67-1fc9da1b3a60
+1476860284508	Marionette	INFO	sendAsync 69854333-fdd5-47d2-bc67-1fc9da1b3a60
+1476860284579	Marionette	INFO	sendAsync 69854333-fdd5-47d2-bc67-1fc9da1b3a60
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=l&json=1&p=3&sid=1458_18240_17942_21087_17001_21193_21373_20930&req=2&csor=1&cb=jQuery11020877627422017674_1476860284041&_=1476860284043, line 1: TypeError: jQuery11020877627422017674_1476860284041 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=la&json=1&p=3&sid=1458_18240_17942_21087_17001_21193_21373_20930&req=2&csor=2&pwd=l&cb=jQuery11020877627422017674_1476860284041&_=1476860284044, line 1: TypeError: jQuery11020877627422017674_1476860284041 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=lala&json=1&p=3&sid=1458_18240_17942_21087_17001_21193_21373_20930&req=2&csor=4&pwd=lal&cb=jQuery11020877627422017674_1476860284041&_=1476860284046, line 1: TypeError: jQuery11020877627422017674_1476860284041 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=lal&json=1&p=3&sid=1458_18240_17942_21087_17001_21193_21373_20930&req=2&csor=3&pwd=la&cb=jQuery11020877627422017674_1476860284041&_=1476860284045, line 1: TypeError: jQuery11020877627422017674_1476860284041 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=lalala&json=1&p=3&sid=1458_18240_17942_21087_17001_21193_21373_20930&req=2&csor=6&pwd=lalal&cb=jQuery11020877627422017674_1476860284041&_=1476860284048, line 1: TypeError: jQuery11020877627422017674_1476860284041 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=lalal&json=1&p=3&sid=1458_18240_17942_21087_17001_21193_21373_20930&req=2&csor=5&pwd=lala&cb=jQuery11020877627422017674_1476860284041&_=1476860284047, line 1: TypeError: jQuery11020877627422017674_1476860284041 is not a function
+1476860284829	Marionette	INFO	sendAsync 69854333-fdd5-47d2-bc67-1fc9da1b3a60
+1476860326281	geckodriver	INFO	Listening on 127.0.0.1:29367
+1476860328307	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.fBin6zuD2AXs
+1476860328313	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1476860328335	geckodriver::marionette	INFO	Connecting to Marionette on localhost:29375
+1476860329591	Marionette	INFO	Listening on port 29375
+1476860332088	Marionette	INFO	startBrowser f5850f2a-4b3c-4bba-b13a-99e738c851c6
+1476860332097	Marionette	INFO	sendAsync f5850f2a-4b3c-4bba-b13a-99e738c851c6
+1476860332412	Marionette	INFO	sendAsync f5850f2a-4b3c-4bba-b13a-99e738c851c6
+1476860332826	Marionette	INFO	sendAsync f5850f2a-4b3c-4bba-b13a-99e738c851c6
+JavaScript warning: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_5492bfab.js, line 98: unreachable code after return statement
+1476860334789	Marionette	INFO	sendAsync f5850f2a-4b3c-4bba-b13a-99e738c851c6
+1476860334793	Marionette	INFO	sendAsync f5850f2a-4b3c-4bba-b13a-99e738c851c6
+1476860334800	Marionette	INFO	sendAsync f5850f2a-4b3c-4bba-b13a-99e738c851c6
+1476860334912	Marionette	INFO	sendAsync f5850f2a-4b3c-4bba-b13a-99e738c851c6
+1476860334928	Marionette	INFO	sendAsync f5850f2a-4b3c-4bba-b13a-99e738c851c6
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=P&json=1&p=3&sid=21365_1458_18241_21079_21192_21373_20927&req=2&csor=1&cb=jQuery11020590000434692725_1476860334431&_=1476860334433, line 1: TypeError: jQuery11020590000434692725_1476860334431 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=PS4&json=1&p=3&sid=21365_1458_18241_21079_21192_21373_20927&req=2&csor=3&pwd=PS&cb=jQuery11020590000434692725_1476860334431&_=1476860334435, line 1: TypeError: jQuery11020590000434692725_1476860334431 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=PS&json=1&p=3&sid=21365_1458_18241_21079_21192_21373_20927&req=2&csor=2&pwd=P&cb=jQuery11020590000434692725_1476860334431&_=1476860334434, line 1: TypeError: jQuery11020590000434692725_1476860334431 is not a function
+[Child 8944] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 343
+[Child 8944] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 343
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x48010C,name=PContent::Msg_AsyncMessage) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: chrome://global/content/process-content.js, line 30: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIMessageSender.sendAsyncMessage]
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2C0042,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][OnMaybeDequeueOne] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4800B5,name=PContent::Msg_ConsoleMessage) Channel closing: too late to send/recv, messages will be lost
+
+1476862266361	geckodriver	INFO	Listening on 127.0.0.1:32046
+1476862268359	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.ffO7Oc5QYbXr
+1476862268366	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1476862268458	geckodriver::marionette	INFO	Connecting to Marionette on localhost:32053
+1476862271730	Marionette	INFO	Listening on port 32053
+1476862276477	Marionette	INFO	startBrowser ead392d3-4016-4e7b-b120-d090154619bd
+1476862276520	Marionette	INFO	sendAsync ead392d3-4016-4e7b-b120-d090154619bd
+1476862277330	Marionette	INFO	sendAsync ead392d3-4016-4e7b-b120-d090154619bd
+JavaScript warning: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_5492bfab.js, line 98: unreachable code after return statement
+1476862280109	Marionette	INFO	sendAsync ead392d3-4016-4e7b-b120-d090154619bd
+1476862280146	Marionette	INFO	sendAsync ead392d3-4016-4e7b-b120-d090154619bd
+1476862280182	Marionette	INFO	sendAsync ead392d3-4016-4e7b-b120-d090154619bd
+1476862280660	Marionette	INFO	sendAsync ead392d3-4016-4e7b-b120-d090154619bd
+1476862280664	Marionette	INFO	sendAsync ead392d3-4016-4e7b-b120-d090154619bd
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=P&json=1&p=3&sid=1445_18240_21079_17001_21377_21191_21372&req=2&csor=1&cb=jQuery110205947600134604323_1476862279606&_=1476862279608, line 1: TypeError: jQuery110205947600134604323_1476862279606 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=PS&json=1&p=3&sid=1445_18240_21079_17001_21377_21191_21372&req=2&csor=2&pwd=P&cb=jQuery110205947600134604323_1476862279606&_=1476862279609, line 1: TypeError: jQuery110205947600134604323_1476862279606 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=PS4&json=1&p=3&sid=1445_18240_21079_17001_21377_21191_21372&req=2&csor=3&pwd=PS&cb=jQuery110205947600134604323_1476862279606&_=1476862279610, line 1: TypeError: jQuery110205947600134604323_1476862279606 is not a function
+1476862281447	Marionette	INFO	sendAsync ead392d3-4016-4e7b-b120-d090154619bd
+1476862437517	geckodriver	INFO	Listening on 127.0.0.1:32295
+1476862439537	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.PazgKv1coBII
+1476862439540	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1476862439559	geckodriver::marionette	INFO	Connecting to Marionette on localhost:32302
+1476862441013	Marionette	INFO	Listening on port 32302
+1476862443293	Marionette	INFO	startBrowser 92a323a2-731e-49f3-8f96-2e45979a7227
+1476862443300	Marionette	INFO	sendAsync 92a323a2-731e-49f3-8f96-2e45979a7227
+1476862443583	Marionette	INFO	sendAsync 92a323a2-731e-49f3-8f96-2e45979a7227
+1476862444646	Marionette	INFO	sendAsync 92a323a2-731e-49f3-8f96-2e45979a7227
+1476862444655	Marionette	INFO	sendAsync 92a323a2-731e-49f3-8f96-2e45979a7227
+1476862444667	Marionette	INFO	sendAsync 92a323a2-731e-49f3-8f96-2e45979a7227
+1476862445583	Marionette	INFO	sendAsync 92a323a2-731e-49f3-8f96-2e45979a7227
+1476862445586	Marionette	INFO	sendAsync 92a323a2-731e-49f3-8f96-2e45979a7227
+1476862445809	Marionette	INFO	sendAsync 92a323a2-731e-49f3-8f96-2e45979a7227
+1476862445818	Marionette	INFO	sendAsync 92a323a2-731e-49f3-8f96-2e45979a7227
+1476862453425	geckodriver	INFO	Listening on 127.0.0.1:32362
+1476862455437	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.vmsyesCGknF6
+1476862455441	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1476862455462	geckodriver::marionette	INFO	Connecting to Marionette on localhost:32369
+1476862457053	Marionette	INFO	Listening on port 32369
+1476862459188	Marionette	INFO	startBrowser ca0768c4-1f65-46d2-a684-a4861c142a86
+1476862459197	Marionette	INFO	sendAsync ca0768c4-1f65-46d2-a684-a4861c142a86
+1476862459685	Marionette	INFO	sendAsync ca0768c4-1f65-46d2-a684-a4861c142a86
+1476862460177	Marionette	INFO	sendAsync ca0768c4-1f65-46d2-a684-a4861c142a86
+1476862460185	Marionette	INFO	sendAsync ca0768c4-1f65-46d2-a684-a4861c142a86
+1476862460192	Marionette	INFO	sendAsync ca0768c4-1f65-46d2-a684-a4861c142a86
+1476862461872	Marionette	INFO	sendAsync ca0768c4-1f65-46d2-a684-a4861c142a86
+1476862461898	Marionette	INFO	sendAsync ca0768c4-1f65-46d2-a684-a4861c142a86
+1476862462117	Marionette	INFO	sendAsync ca0768c4-1f65-46d2-a684-a4861c142a86
+1476862462123	Marionette	INFO	sendAsync ca0768c4-1f65-46d2-a684-a4861c142a86
+1476863724474	geckodriver	INFO	Listening on 127.0.0.1:33451
+1476863726467	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.RynkVH6P3ZZI
+1476863726474	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1476863726534	geckodriver::marionette	INFO	Connecting to Marionette on localhost:33457
+1476863728521	Marionette	INFO	Listening on port 33457
+1476863731230	Marionette	INFO	startBrowser ec012cb8-c8df-4886-86bd-3c319af6317b
+1476863731246	Marionette	INFO	sendAsync ec012cb8-c8df-4886-86bd-3c319af6317b
+1476863731783	Marionette	INFO	sendAsync ec012cb8-c8df-4886-86bd-3c319af6317b
+1476863732859	Marionette	INFO	sendAsync ec012cb8-c8df-4886-86bd-3c319af6317b
+1476863737477	Marionette	INFO	sendAsync ec012cb8-c8df-4886-86bd-3c319af6317b
+1476863737516	Marionette	INFO	sendAsync ec012cb8-c8df-4886-86bd-3c319af6317b
+1476863737524	Marionette	INFO	sendAsync ec012cb8-c8df-4886-86bd-3c319af6317b
+1476863737762	Marionette	INFO	sendAsync ec012cb8-c8df-4886-86bd-3c319af6317b
+1476863737768	Marionette	INFO	sendAsync ec012cb8-c8df-4886-86bd-3c319af6317b
+1476863737991	Marionette	INFO	sendAsync ec012cb8-c8df-4886-86bd-3c319af6317b
+1476863737996	Marionette	INFO	sendAsync ec012cb8-c8df-4886-86bd-3c319af6317b
+1476863738797	Marionette	INFO	sendAsync ec012cb8-c8df-4886-86bd-3c319af6317b
+1476863911881	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+console.error: 
+  navigated; resolution of _defaultNode aborted
+[Child 8136] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 343
+1476865137334	geckodriver	INFO	Listening on 127.0.0.1:34995
+1476865139336	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.uGcVGRN57oE5
+1476865139345	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1476865139444	geckodriver::marionette	INFO	Connecting to Marionette on localhost:35001
+1476865141577	Marionette	INFO	Listening on port 35001
+1476865144324	Marionette	INFO	startBrowser 35a7fa0c-40ff-4840-8a2a-392898a12982
+1476865144333	Marionette	INFO	sendAsync 35a7fa0c-40ff-4840-8a2a-392898a12982
+1476865144861	Marionette	INFO	sendAsync 35a7fa0c-40ff-4840-8a2a-392898a12982
+1476865145095	Marionette	INFO	sendAsync 35a7fa0c-40ff-4840-8a2a-392898a12982
+1476865148104	Marionette	INFO	sendAsync 35a7fa0c-40ff-4840-8a2a-392898a12982
+1476865148120	Marionette	INFO	sendAsync 35a7fa0c-40ff-4840-8a2a-392898a12982
+1476865148129	Marionette	INFO	sendAsync 35a7fa0c-40ff-4840-8a2a-392898a12982
+1476865148350	Marionette	INFO	sendAsync 35a7fa0c-40ff-4840-8a2a-392898a12982
+1476865148355	Marionette	INFO	sendAsync 35a7fa0c-40ff-4840-8a2a-392898a12982
+1476865148582	Marionette	INFO	sendAsync 35a7fa0c-40ff-4840-8a2a-392898a12982
+1476865148594	Marionette	INFO	sendAsync 35a7fa0c-40ff-4840-8a2a-392898a12982
+1476865149664	Marionette	INFO	sendAsync 35a7fa0c-40ff-4840-8a2a-392898a12982
+1476865244966	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+[Child 4220] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 343
+1476865246705	geckodriver	INFO	Listening on 127.0.0.1:35086
+1476865248736	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.Pfl00zUjzVbE
+1476865248741	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1476865248764	geckodriver::marionette	INFO	Connecting to Marionette on localhost:35093
+1476865250167	Marionette	INFO	Listening on port 35093
+1476865251794	Marionette	INFO	startBrowser e0fc22cf-fc6b-433c-b99c-43b869f956db
+1476865251801	Marionette	INFO	sendAsync e0fc22cf-fc6b-433c-b99c-43b869f956db
+1476865252184	Marionette	INFO	sendAsync e0fc22cf-fc6b-433c-b99c-43b869f956db
+1476865252545	Marionette	INFO	sendAsync e0fc22cf-fc6b-433c-b99c-43b869f956db
+1476865252550	Marionette	INFO	sendAsync e0fc22cf-fc6b-433c-b99c-43b869f956db
+1476865252917	Marionette	INFO	sendAsync e0fc22cf-fc6b-433c-b99c-43b869f956db
+1476865253685	Marionette	INFO	sendAsync e0fc22cf-fc6b-433c-b99c-43b869f956db
+1476865253695	Marionette	INFO	sendAsync e0fc22cf-fc6b-433c-b99c-43b869f956db
+1476865253920	Marionette	INFO	sendAsync e0fc22cf-fc6b-433c-b99c-43b869f956db
+1476865253933	Marionette	INFO	sendAsync e0fc22cf-fc6b-433c-b99c-43b869f956db
+1476865254162	Marionette	INFO	sendAsync e0fc22cf-fc6b-433c-b99c-43b869f956db
+1476865718915	geckodriver	INFO	Listening on 127.0.0.1:36058
+1476865720895	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.quXipX1aG58r
+1476865720900	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1476865721024	geckodriver::marionette	INFO	Connecting to Marionette on localhost:36064
+1476865723119	Marionette	INFO	Listening on port 36064
+1476865726629	Marionette	INFO	startBrowser db3b4337-33b0-49c0-95cb-62556b3631e9
+1476865726638	Marionette	INFO	sendAsync db3b4337-33b0-49c0-95cb-62556b3631e9
+1476865727701	Marionette	INFO	sendAsync db3b4337-33b0-49c0-95cb-62556b3631e9
+1476865731059	Marionette	INFO	sendAsync db3b4337-33b0-49c0-95cb-62556b3631e9
+1476865731063	Marionette	INFO	sendAsync db3b4337-33b0-49c0-95cb-62556b3631e9
+1476865731068	Marionette	INFO	sendAsync db3b4337-33b0-49c0-95cb-62556b3631e9
+1476865731711	Marionette	INFO	sendAsync db3b4337-33b0-49c0-95cb-62556b3631e9
+1476865731727	Marionette	INFO	sendAsync db3b4337-33b0-49c0-95cb-62556b3631e9
+1476865731948	Marionette	INFO	sendAsync db3b4337-33b0-49c0-95cb-62556b3631e9
+1476865731953	Marionette	INFO	sendAsync db3b4337-33b0-49c0-95cb-62556b3631e9
+1476865732201	Marionette	INFO	sendAsync db3b4337-33b0-49c0-95cb-62556b3631e9
+1476865791116	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.OX0O6hOc00zH
+1476865772622	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1476865772638	geckodriver::marionette	INFO	Connecting to Marionette on localhost:36136
+1476865774236	Marionette	INFO	Listening on port 36136
+1476865776006	Marionette	INFO	startBrowser 58135712-2b71-42af-b004-1cd3af7fa1c9
+1476865776018	Marionette	INFO	sendAsync 58135712-2b71-42af-b004-1cd3af7fa1c9
+1476865776382	Marionette	INFO	sendAsync 58135712-2b71-42af-b004-1cd3af7fa1c9
+1476865776785	Marionette	INFO	sendAsync 58135712-2b71-42af-b004-1cd3af7fa1c9
+1476865776791	Marionette	INFO	sendAsync 58135712-2b71-42af-b004-1cd3af7fa1c9
+1476865776796	Marionette	INFO	sendAsync 58135712-2b71-42af-b004-1cd3af7fa1c9
+1476865777822	Marionette	INFO	sendAsync 58135712-2b71-42af-b004-1cd3af7fa1c9
+1476865777844	Marionette	INFO	sendAsync 58135712-2b71-42af-b004-1cd3af7fa1c9
+1476865778099	Marionette	INFO	sendAsync 58135712-2b71-42af-b004-1cd3af7fa1c9
+1476865778110	Marionette	INFO	sendAsync 58135712-2b71-42af-b004-1cd3af7fa1c9
+1476865779154	Marionette	INFO	sendAsync 58135712-2b71-42af-b004-1cd3af7fa1c9
+1476866045898	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 2620: NS_ERROR_ILLEGAL_VALUE: aListener must be an AddonListener object
+1476866346500	geckodriver	INFO	Listening on 127.0.0.1:37100
+1476866348500	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.JUCQXUjmJbzP
+1476866348504	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1476866348531	geckodriver::marionette	INFO	Connecting to Marionette on localhost:37109
+1476866350098	Marionette	INFO	Listening on port 37109
+1476866352381	Marionette	INFO	startBrowser 21b6cc94-d48b-44a1-9448-2e848a2b7104
+1476866352391	Marionette	INFO	sendAsync 21b6cc94-d48b-44a1-9448-2e848a2b7104
+1476866352966	Marionette	INFO	sendAsync 21b6cc94-d48b-44a1-9448-2e848a2b7104
+1476866354092	Marionette	INFO	sendAsync 21b6cc94-d48b-44a1-9448-2e848a2b7104
+1476866354200	Marionette	INFO	sendAsync 21b6cc94-d48b-44a1-9448-2e848a2b7104
+1476866354206	Marionette	INFO	sendAsync 21b6cc94-d48b-44a1-9448-2e848a2b7104
+1476866354839	Marionette	INFO	sendAsync 21b6cc94-d48b-44a1-9448-2e848a2b7104
+1476866354846	Marionette	INFO	sendAsync 21b6cc94-d48b-44a1-9448-2e848a2b7104
+1476866355063	Marionette	INFO	sendAsync 21b6cc94-d48b-44a1-9448-2e848a2b7104
+1476866355067	Marionette	INFO	sendAsync 21b6cc94-d48b-44a1-9448-2e848a2b7104
+1476866355288	Marionette	INFO	sendAsync 21b6cc94-d48b-44a1-9448-2e848a2b7104
+[Child 8824] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 343
+ile.f2OWxrgVFygn
+1476866446542	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1476866446559	geckodriver::marionette	INFO	Connecting to Marionette on localhost:37288
+1476866447910	Marionette	INFO	Listening on port 37288
+1476866450227	Marionette	INFO	startBrowser 11dac46a-c7d6-4bae-a74e-bbe58b2bb464
+1476866450235	Marionette	INFO	sendAsync 11dac46a-c7d6-4bae-a74e-bbe58b2bb464
+1476866450632	Marionette	INFO	sendAsync 11dac46a-c7d6-4bae-a74e-bbe58b2bb464
+1476866451052	Marionette	INFO	sendAsync 11dac46a-c7d6-4bae-a74e-bbe58b2bb464
+1476866451056	Marionette	INFO	sendAsync 11dac46a-c7d6-4bae-a74e-bbe58b2bb464
+1476866451060	Marionette	INFO	sendAsync 11dac46a-c7d6-4bae-a74e-bbe58b2bb464
+1476866451776	Marionette	INFO	sendAsync 11dac46a-c7d6-4bae-a74e-bbe58b2bb464
+1476866451802	Marionette	INFO	sendAsync 11dac46a-c7d6-4bae-a74e-bbe58b2bb464
+1476866452036	Marionette	INFO	sendAsync 11dac46a-c7d6-4bae-a74e-bbe58b2bb464
+1476866452050	Marionette	INFO	sendAsync 11dac46a-c7d6-4bae-a74e-bbe58b2bb464
+1476866452297	Marionette	INFO	sendAsync 11dac46a-c7d6-4bae-a74e-bbe58b2bb464
+1476866804617	geckodriver	INFO	Listening on 127.0.0.1:37677
+1476866806602	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.V4RA4wCd4pEd
+1476866806607	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1476866806636	geckodriver::marionette	INFO	Connecting to Marionette on localhost:37683
+1476866807997	Marionette	INFO	Listening on port 37683
+1476866809930	Marionette	INFO	startBrowser 73750ff0-3148-444d-8fc1-405a50d48662
+1476866809939	Marionette	INFO	sendAsync 73750ff0-3148-444d-8fc1-405a50d48662
+1476866810768	Marionette	INFO	sendAsync 73750ff0-3148-444d-8fc1-405a50d48662
+1476866814635	Marionette	INFO	sendAsync 73750ff0-3148-444d-8fc1-405a50d48662
+1476866814639	Marionette	INFO	sendAsync 73750ff0-3148-444d-8fc1-405a50d48662
+1476866814646	Marionette	INFO	sendAsync 73750ff0-3148-444d-8fc1-405a50d48662
+1476866815694	Marionette	INFO	sendAsync 73750ff0-3148-444d-8fc1-405a50d48662
+1476866815735	Marionette	INFO	sendAsync 73750ff0-3148-444d-8fc1-405a50d48662
+1476866815960	Marionette	INFO	sendAsync 73750ff0-3148-444d-8fc1-405a50d48662
+1476866815981	Marionette	INFO	sendAsync 73750ff0-3148-444d-8fc1-405a50d48662
+1476866816267	Marionette	INFO	sendAsync 73750ff0-3148-444d-8fc1-405a50d48662
+1476867174377	geckodriver	INFO	Listening on 127.0.0.1:38154
+1476867176387	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.iHGUlvHJZY79
+1476867176393	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1476867176415	geckodriver::marionette	INFO	Connecting to Marionette on localhost:38160
+1476867177542	Marionette	INFO	Listening on port 38160
+1476867179359	Marionette	INFO	startBrowser 6a5824bd-aa0d-4090-8527-8840bbb3a73f
+1476867179368	Marionette	INFO	sendAsync 6a5824bd-aa0d-4090-8527-8840bbb3a73f
+1476867179826	Marionette	INFO	sendAsync 6a5824bd-aa0d-4090-8527-8840bbb3a73f
+1476867180124	Marionette	INFO	sendAsync 6a5824bd-aa0d-4090-8527-8840bbb3a73f
+1476867180131	Marionette	INFO	sendAsync 6a5824bd-aa0d-4090-8527-8840bbb3a73f
+1476867180137	Marionette	INFO	sendAsync 6a5824bd-aa0d-4090-8527-8840bbb3a73f
+1476867180758	Marionette	INFO	sendAsync 6a5824bd-aa0d-4090-8527-8840bbb3a73f
+1476867180768	Marionette	INFO	sendAsync 6a5824bd-aa0d-4090-8527-8840bbb3a73f
+1476867180986	Marionette	INFO	sendAsync 6a5824bd-aa0d-4090-8527-8840bbb3a73f
+1476867181010	Marionette	INFO	sendAsync 6a5824bd-aa0d-4090-8527-8840bbb3a73f
+1476867181233	Marionette	INFO	sendAsync 6a5824bd-aa0d-4090-8527-8840bbb3a73f
+1476867375787	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1476867451886	geckodriver	INFO	Listening on 127.0.0.1:38468
+1476867453928	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.jydKWBlFhSI2
+1476867453933	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1476867453951	geckodriver::marionette	INFO	Connecting to Marionette on localhost:38475
+1476867455312	Marionette	INFO	Listening on port 38475
+1476867457201	Marionette	INFO	startBrowser 29982c5d-652b-4621-8b15-359e47dce2ea
+1476867457210	Marionette	INFO	sendAsync 29982c5d-652b-4621-8b15-359e47dce2ea
+1476867457598	Marionette	INFO	sendAsync 29982c5d-652b-4621-8b15-359e47dce2ea
+1476867457934	Marionette	INFO	sendAsync 29982c5d-652b-4621-8b15-359e47dce2ea
+1476867457938	Marionette	INFO	sendAsync 29982c5d-652b-4621-8b15-359e47dce2ea
+1476867457947	Marionette	INFO	sendAsync 29982c5d-652b-4621-8b15-359e47dce2ea
+1476867458678	Marionette	INFO	sendAsync 29982c5d-652b-4621-8b15-359e47dce2ea
+1476867458696	Marionette	INFO	sendAsync 29982c5d-652b-4621-8b15-359e47dce2ea
+1476867458923	Marionette	INFO	sendAsync 29982c5d-652b-4621-8b15-359e47dce2ea
+1476867458927	Marionette	INFO	sendAsync 29982c5d-652b-4621-8b15-359e47dce2ea
+1476867459183	Marionette	INFO	sendAsync 29982c5d-652b-4621-8b15-359e47dce2ea
+1476927991244	geckodriver	INFO	Listening on 127.0.0.1:6525
+1476927993289	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.PMJzgnpNsL31
+1476927993291	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1476927993480	geckodriver::marionette	INFO	Connecting to Marionette on localhost:6531
+1476927998285	Marionette	INFO	Listening on port 6531
+1476928002136	Marionette	INFO	startBrowser 784e3bfc-da16-489d-b3ae-95aaccf37901
+1476928002149	Marionette	INFO	sendAsync 784e3bfc-da16-489d-b3ae-95aaccf37901
+1476928002768	Marionette	INFO	sendAsync 784e3bfc-da16-489d-b3ae-95aaccf37901
+1477562349456	geckodriver	INFO	Listening on 127.0.0.1:31995
+1477562351506	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.n5hAjZEF0T9c
+1477562351509	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1477562351780	geckodriver::marionette	INFO	Connecting to Marionette on localhost:32003
+1477562356919	Marionette	INFO	Listening on port 32003
+1477562362326	Marionette	INFO	startBrowser 07b24c9a-a84c-4382-979c-f3de41706aae
+1477562362335	Marionette	INFO	sendAsync 07b24c9a-a84c-4382-979c-f3de41706aae
+1477562362928	Marionette	INFO	sendAsync 07b24c9a-a84c-4382-979c-f3de41706aae
+JavaScript error: chrome://marionette/content/listener.js, line 960: NS_ERROR_FILE_NOT_FOUND: 
+1477562441705	geckodriver	INFO	Listening on 127.0.0.1:32092
+1477562443749	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.5pRqTTMEr9Te
+1477562443752	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1477562443769	geckodriver::marionette	INFO	Connecting to Marionette on localhost:32098
+1477562445866	Marionette	INFO	Listening on port 32098
+1477562448467	Marionette	INFO	startBrowser e48c472b-ef9f-4154-9810-e0f4196424cc
+1477562448474	Marionette	INFO	sendAsync e48c472b-ef9f-4154-9810-e0f4196424cc
+1477562449031	Marionette	INFO	sendAsync e48c472b-ef9f-4154-9810-e0f4196424cc
+1477562451008	Marionette	INFO	sendAsync e48c472b-ef9f-4154-9810-e0f4196424cc
+1477562526382	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1477617198214	geckodriver	INFO	Listening on 127.0.0.1:6974
+1477617200266	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.nfB9WHOUnXLi
+1477617200273	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1477617200368	geckodriver::marionette	INFO	Connecting to Marionette on localhost:6982
+1477617204751	Marionette	INFO	Listening on port 6982
+1477617208830	Marionette	INFO	startBrowser 4350a370-9e35-44a7-a7e3-46c4174b3624
+1477617208843	Marionette	INFO	sendAsync 4350a370-9e35-44a7-a7e3-46c4174b3624
+1477617209379	Marionette	INFO	sendAsync 4350a370-9e35-44a7-a7e3-46c4174b3624
+1477617210596	Marionette	INFO	sendAsync 4350a370-9e35-44a7-a7e3-46c4174b3624
+1477617312654	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1477617314818	geckodriver	INFO	Listening on 127.0.0.1:7125
+1477617316850	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.nerd28OrIvGX
+1477617316856	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1477617316880	geckodriver::marionette	INFO	Connecting to Marionette on localhost:7133
+1477617318436	Marionette	INFO	Listening on port 7133
+1477617320278	Marionette	INFO	startBrowser 92b14275-65a7-48ff-8637-5088de151238
+1477617320290	Marionette	INFO	sendAsync 92b14275-65a7-48ff-8637-5088de151238
+1477617320691	Marionette	INFO	sendAsync 92b14275-65a7-48ff-8637-5088de151238
+1477617321352	Marionette	INFO	sendAsync 92b14275-65a7-48ff-8637-5088de151238
+1477617323177	Marionette	INFO	sendAsync 92b14275-65a7-48ff-8637-5088de151238
+[Child 8784] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 343
+[Child 8784] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 343
+
+###!!! [Child][OnMaybeDequeueOne] Error: Channel closing: too late to send/recv, messages will be lost
+
+1487929958659	geckodriver	INFO	Listening on 127.0.0.1:12355
+1487929960689	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.sbfe0IoHRFFb
+1487929960694	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1487929960840	geckodriver::marionette	INFO	Connecting to Marionette on localhost:12361
+1487929965513	Marionette	INFO	Listening on port 12361
+[NPAPI 760] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+JavaScript error: https://cpro.baidustatic.com/cpro/ui/noexpire/js/4.0.0/adClosefeedbackUpgrade.min.js, line 1: TypeError: g is null
+Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1651"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1651:5
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:488:5
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+NetworkResponseListener.prototype.onStartRequest@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:429:5
+Line: 1651, column: 0
+console.error: 
+  Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1651"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1651:5
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:488:5
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+NetworkResponseListener.prototype.onStartRequest@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:429:5
+Line: 1651, column: 0
+Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1651"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1651:5
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:488:5
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+NetworkResponseListener.prototype.onStartRequest@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:429:5
+Line: 1651, column: 0
+console.error: 
+  Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1651"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1651:5
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:488:5
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+NetworkResponseListener.prototype.onStartRequest@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:429:5
+Line: 1651, column: 0
+Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1651"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1651:5
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+NetworkResponseListener.prototype._onComplete@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:621:5
+NetworkResponseListener.prototype.onStreamClose@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:578:7
+NetworkResponseListener.prototype.onInputStreamReady@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:669:7
+Line: 1651, column: 0
+console.error: 
+  Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1651"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1651:5
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+NetworkResponseListener.prototype._onComplete@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:621:5
+NetworkResponseListener.prototype.onStreamClose@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:578:7
+NetworkResponseListener.prototype.onInputStreamReady@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:669:7
+Line: 1651, column: 0
+Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1651"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1651:5
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+NetworkResponseListener.prototype._onComplete@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:621:5
+NetworkResponseListener.prototype.onStreamClose@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:578:7
+NetworkResponseListener.prototype.onInputStreamReady@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:669:7
+Line: 1651, column: 0
+console.error: 
+  Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1651"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1651:5
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+NetworkResponseListener.prototype._onComplete@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:621:5
+NetworkResponseListener.prototype.onStreamClose@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:578:7
+NetworkResponseListener.prototype.onInputStreamReady@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:669:7
+Line: 1651, column: 0
+[NPAPI 9508] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1487930519275	geckodriver	INFO	Listening on 127.0.0.1:13042
+1487930521301	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.7kY561QQWB8U
+1487930521308	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1487930521336	geckodriver::marionette	INFO	Connecting to Marionette on localhost:13048
+1487930522387	Marionette	INFO	Listening on port 13048
+IPDL protocol error: Error deserializing 'IAccessibleHolder'
+1487930534235	geckodriver::marionette	ERROR	Failed to kill browser process
+[Child 5504] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+[NPAPI 9960] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+1487930603450	geckodriver	INFO	Listening on 127.0.0.1:13135
+1487930605465	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.1S8x8KVIWWYF
+1487930605470	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1487930605487	geckodriver::marionette	INFO	Connecting to Marionette on localhost:13141
+1487930606559	Marionette	INFO	Listening on port 13141
+IPDL protocol error: Error deserializing 'IAccessibleHolder'
+[Child 5356] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+1487930611522	geckodriver::marionette	ERROR	Failed to kill browser process
+[NPAPI 4976] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+1488183386973	geckodriver	INFO	Listening on 127.0.0.1:48214
+1488183389055	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.c6YRTorLXPmL
+1488183389059	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1488183389320	geckodriver::marionette	INFO	Connecting to Marionette on localhost:48221
+1488183395024	Marionette	INFO	Listening on port 48221
+IPDL protocol error: Error deserializing 'IAccessibleHolder'
+[Child 3820] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+1488183415028	geckodriver::marionette	ERROR	Failed to kill browser process
+1488183596773	geckodriver	INFO	Listening on 127.0.0.1:48406
+1488183598790	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.6PMHvBQWHgLG
+1488183598793	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1488183598810	geckodriver::marionette	INFO	Connecting to Marionette on localhost:48413
+1488183601048	Marionette	INFO	Listening on port 48413
+IPDL protocol error: Error deserializing 'IAccessibleHolder'
+[Child 7428] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+[NPAPI 7872] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+1488183614375	geckodriver::marionette	ERROR	Failed to kill browser process
+1488183770532	geckodriver	INFO	Listening on 127.0.0.1:48579
+1488183772611	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.g5Fv5Dgro7ku
+1488183772618	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1488183772644	geckodriver::marionette	INFO	Connecting to Marionette on localhost:48585
+1488183774073	Marionette	INFO	Listening on port 48585
+1488184387678	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1488184387679	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1488184387682	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+[Child 3384] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3384] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+/src/ipc/glue/MessageChannel.cpp, line 2056
+1488184036501	geckodriver::marionette	ERROR	Failed to kill browser process
+1488185867994	geckodriver	INFO	Listening on 127.0.0.1:51031
+1488185870026	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.gNJu1b5CmAsl
+1488185870030	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1488185870050	geckodriver::marionette	INFO	Connecting to Marionette on localhost:51037
+1488185871409	Marionette	INFO	Listening on port 51037
+[Child 7764] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+1512962876228	geckodriver	INFO	Listening on 127.0.0.1:24953
+1512962878363	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.DZ6UIpV28DqP
+1512962878381	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1512962878531	geckodriver::marionette	INFO	Connecting to Marionette on localhost:24967
+1512962958241	geckodriver	INFO	Listening on 127.0.0.1:25123
+1512962960356	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.8J2UrTvmkItf
+1512962960359	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1512962960406	geckodriver::marionette	INFO	Connecting to Marionette on localhost:25130
+[GFX1-]: Could not get a DXGI adapter
+[GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 8904, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8904, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GFX1-]: Could not get a DXGI adapter
+[GFX1-]: Could not get a DXGI adapter
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 3760, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 6772, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6772, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 9720, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[GPU 7672, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: (msgtype=0x440006,name=PImageBridge::Msg_WillClose) Channel error: cannot send/recv
+
